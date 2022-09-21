@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    width: 1050px;
+    margin: 0 auto;
+}
+.row{  
+    margin-left: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.brunh a{
+    color: white;
+}
+.justify{
+    justify-content: space-between;
+}
+.header-bg{
+    background-image:url(./img/Place\ Your\ Design\ Here\ \(Double\ Click\ to\ Edit\).png);
+    background-size: cover;
+    height:700px;
+    /* width: 100; */
+    
+}
+.header-list{
+    margin-left:  auto;
+}
+.header-list ul li{
+    display: inline-block;
+}
+.header-list ul li a{
+    color: white;
+    /* color: black; */
+    padding: 0 20px;
+}
+.menu{
+    padding: 25px 0;
+}
+
+
+.first{
+    border: 2px solid blue;
+    width: 500px;
+    text-align: center;
+    height: 300px;
+    margin: 110px 300px;
+    background-color: #ffffffa3;
+    padding: 100px;
+    color: #2c3a42;
+}
+.first .one{
+    font-family:"cookie";
+    font-size: 35px;
+}
+.first .two{
+    font-size: 40px;
+    color: rgb(165, 99, 42);
+}
+.first button{
+    padding: 5px 7px;
+}
+.second{
+    margin: 20px;
+    width: 1075px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #2a3b40;
+    justify-content: space-between;
+}
+.img img{
+    margin: 50px;
+    height: 230px;
+    width: 300px;
+}
+.col-10{
+    color: white;
+    margin: 100px;
+}
+.col-10 h2{
+    margin-bottom: 20px;
+}
+.col-10 p{
+    font-size: 10px;
+    line-height: 20px;
+}
+.row2{
+    display: flex;
+    background-color:cornsilk;
+}
+.col-20{
+    margin: 20px 100px;
+    justify-content:center;
+    display: flex;
+}
+.col-20 h2{
+ padding-bottom: 20px;
+}
+.col-20 p{
+    font-size: 10px;
+}
+.new-tastes,
+.new-spices,
+.new-dishes{
+    padding: 20px 50px;
+
+}
+.bgimg{
+    background-image: url(./img/bg2.png);
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    padding: 80px;
+}
+.col-1{
+    height: 200px;
+}
+.para{
+    height: 200px;
+  
+    width: 200px;
+}
+
+.title{
+    text-align: center;
+    /* display: block; */
+    /* margin-left: 100px; */
+    padding: 20px 20px;
+}
+.title h2{
+    font-family: "Cookie";
+
+}
+.title span{
+    font-family: 'Times New Roman', Times, serif;
+    color: brown;
+
+}
+
+@font-face{
+    font-family: "Cookie";
+    src: url("Cookie-Regular.ttf");
+}
+.row-3{
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+    /* display: flex */
+}
+.bg-main{
+    background-color: rgba(240, 248, 255, 0.648);
+    
+}
+
+.row-4 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-5 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-30{
+    width: 30%;
+}
+.col-2{
+    width: 20%;
+}
+.box1 img {
+    width: 100%;
+}
+.box2{
+    /* width: 100%; */
+    text-align: center;
+    padding: 70px 20px 0px 20px;
+}
+.box2>h2{
+    font-size: 15px;
+    padding: 10px 0px ;
+}
+.box2>p{
+
+    font-size: 10px;
+}
+.box2>h3{
+    font-size: 10px; 
+     padding: 10px;
+    text-align: center;
+} 
+.box5{
+    padding: 0px 0px;
+    margin: 0px 0px;
+}
+.bg2{
+    height: 200px;
+}
+.row-11{
+    width: 100%;
+    background-color: rgba(240, 248, 255, 0.488);
+}
+.container3{
+    background-image: url(./img/bg2.png);
+    background-size: cover;
+    width: 100%;
+    /* height: 1000px; */
+    
+    padding: 0px;
+}
+.justify{
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+}
+.justify>p{
+    font-size: 15px;
+    margin: 0 auto;
+    width: 50%;
+    color: aliceblue;
+    /* height: 200px; */
+    text-align: center;
+    justify-content: center;
+}
+.justify .text{
+    color: black;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 20px;
+}
+.justify ul li{
+    display: flex;
+    padding: 30px 60px 0px 0px;
+    display: inline-block;
+}
+.container4{
+    background-image: url(./img/bg3.png);
+    background-size: cover;
+    width: 100%;
+    /* height: 300px; */
+}
+.menclass{
+    padding-top: 200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.manpara{
+    background-color: rgba(240, 248, 255, 0.327);
+    /* display: flex; */
+}
+.para2{
+    display: flex;
+}
+.manpara h2,h3{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.manpara span{
+    font-family: cokkia;
+    color: brown;
+}
+.title2 h2{
+    font-family: "Cookie";
+
+}
+.tikka{
+    padding: 10px 75px;
+    display: flex;
+}
+.paraimg img{
+    height: 100%;
+    margin-top:15px;
+    background-color: aliceblue;
+    border: 2px solid black;
+    border-radius: 40%;
+    /* display: flex; */
+}
+
+.para4{
+    padding: 20px 40px;
+}
+.container5{
+    width: 100%;
+    background-color: #2a3b40;
+    height: 700px;
+}
+ .img2{
+    position: relative;
+    /* display: flex; */
+    width: 100%;
+    height: 700px;
+}
+.img2 img{
+    width: 100%;
+}
+.sec3{
+    justify-content: center;
+    text-align: center;
+    /* display: flex; */
+    background-color: #2a3b40;
+}
+.sec3 h2{
+    font-family: "Cookie";
+    justify-content: center;
+    text-align: center;
+    /* display: flex; */
+    background-color: #2a3b40;
+}
+.bhag{
+    /* justify-content: center; */
+    /* text-align: center; */
+    display: flex;
+}
+.bhag .sec1,.sec2,.sec3{
+    padding: 20px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.sec1 input{
+    margin: 12px 0 25px 0;
+    
+}
