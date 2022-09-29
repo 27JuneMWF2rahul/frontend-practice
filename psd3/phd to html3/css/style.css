@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+    /* background-color: #ffffff; */
+}
+@font-face {
+    font-family: "open sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+.containar{
+    width: 1000px;
+    /* background-image: url(../img/sec-4\ img1.png); */
+    margin: 0 auto;
+
+
+}
+.pos-rel{
+    position: relative;
+}
+.pos-ab{
+    position: absolute;
+}
+.row{
+    width: 100%;
+    margin: 0px 10px;
+    /* background-color: aqua; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+ul li{
+    /* background-color: red; */
+    margin-top: 20px;
+    display: flex;
+    width: 100px;
+    display: inline-block;
+}
+ul li:hover{
+    border: 2px solid #484f5b;
+    background-color: #484f5b82;
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    margin: 0;
+    padding: 0px;
+}
+.row1{
+    /* border: 2px solid red; */
+    display: flex;
+}
+.col-50{
+    margin: 0px 20px;
+    width: 50%;
+}
+.img1 img{
+    width: 90%;
+    margin-top: 70px;
+}
+
+.body-text{
+    margin: 90px 20px;
+}
+.col-50 p{
+    margin: 15px 0px;
+}
+.col-50 h2{
+    /* padding-top: 100px; */
+    font-size: 60px;
+    text-transform: capitalize;
+    font-family: "open sans";
+}
+.btn button{
+    margin-top: 40px;
+    background-color: #e6c8c3;
+    padding: 5PX 20PX;
+}
+.mind h2{
+    padding-top: 100px;
+}
+.dig1{
+    top: 500px;
+    left: 95px;
+}
+.dig2{
+    left: 0px;
+}
+
+.dig1 img{
+    width:80%;
+}
+.dig2 img{
+    
+    width:80%;
+}
+.dig3{
+    right: 0;
+    bottom: 0;
+}
+.dig4{
+    right: 0;
+}
+.dig5{
+right: 50px;
+}
+.dig4{
+    right: 0;
+}
+.dig6{
+    top: 122px;
+    right: 30px;
+}
+.sec2{
+    background-image: url(../img/sec-2\ bg.png);
+    height: 700px;
+    background-size: cover
+    
+}
+.row2{
+    margin: 70px 20px;
+    justify-content: center;
+    display: flex
+}
+.col-30{
+    /* height: 100px; */
+    /* border: 2px solid red; */
+    width: 30%;
+    margin: 10px 40px;
+}
+.img2{
+    margin-bottom: 100px;
+    width: 140px;
+    padding-top: 32px;
+}
+.img11{
+    margin-bottom: 200px;
+    width: 180px;
+    padding-top: 42px;
+}
+.sec-2dig1{
+    top: 10px;
+}
+.pogram-text{
+    text-align: center;
+    margin-top: 30px;
+}
+.pat1{
+    margin-top: 70px;
+}
+.sec3img1{
+    width: 100%;
+    z-index: 1;
+}
+.flex{
+    display: flex;
+    /* background-color: #ffffff; */
+}
+.sec3-text{
+    margin: 90px 20px;
+}
+.saec4dig1{
+    top: 0;
+    left: 0;
+}
+.buttom{
+    top: 400px;
+}
+.sec-3dig3{
+    top: -39px;
+    right: -35px
+
+}
+.sec3img1{
+    z-index: 1;
+    width: 100%;
+    padding: 20px;
+    /* margin: 20px; */
+}
+.sec-3dig31{
+    top: -28px;
+    right: -233px;
+}
+.sec-3dig4{
+    top: -43px;
+    left: 322px;
+}
+.sec-3dig5{
+    z-index: 2;
+    top: 230px;
+}
+.sec3dig{
+    z-index: 1;
+} 
+.row-5{
+    display: flex;
+    /* background-image: url(../img/sec-4\ img1.png); */
+    background-color: rgb(228, 228, 228);
+}
+.textforjoin{
+    margin-top: 100px;
+}
+.sec4img{
+    width: 740px;
+}
+.row-6{
+    padding-top: 150px;
+    margin: 0 auto;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.row-7{
+    display: flex;
+}
+.sec-5{
+    border: 2px solid rgba(0, 0, 0, 0.533);
+    margin: 93px 20px;
+    background-color:ghostwhite;
+}
+.sec-5 img{
+    width: 100%;
+}
+
+.sec5-text{
+    /* margin-bottom: 50px; */
+    margin-top: 10px;
+    text-align: center;
+}
+.hight{
+    height: 66%;
+}
+.dig-5{
+    width: 100%;
+}
+.dig51{
+    top: 0;
+    right: 0;
+}
+.dig52{
+    left: -45px;
+    top: 80px;
+    z-index: -1;
+    width: 150px;
+}
+.dig53{
+    left: -45px;
+    top: 200px;
+    z-index: -1;
+    width: 150px;
+}
+.dig54{
+    left: -45px;
+    bottom: 0;
+    /* z-index: -1; */
+    width: 150px;
+}
+.dig55{
+    left: -45px;
+    bottom: 0;
+    /* z-index: -1; */
+    width: 150px;
+}
+.dig57{
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.dig56{
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+.bg2{
+    background-image: url(../img/sec-5\ bg.png);
+}
+.row-8{
+    margin: 100px 0px;
+    display: flex;
+}
+.col-50 img{
+    margin: 5px;
+    width: 100%;
+}
+.sec6-text{
+    margin: 20px 6px;
+}
+.fecbook{
+    height: 22px;
+}
+.col-50 .logo5{
+    width: 40px;
+    top: 3879px;
+    left: 255px;
+    
+}
+.logo2 img{
+    background-color: rgba(0, 0, 0, 0.581);
+    width: 5%;
+    margin: 6px 19px;
+    padding: 6px;
+    /* height: 50%; */
+
+}
+.Get{
+    /* width: 50%; */
+    margin: 0 auto;
+    text-align: center;
+}
+.inpute{
+    /* margin-top: 100px; */
+    margin: 0 auto;
+    width: 50%;
+
+}
+.Get .big{
+    margin: 40px 20px;
+    font-weight: 700;
+    font-size: 60px;
+}
+.inpute input{
+    background-color: #e6c8c382;
+    margin: 10px 0px;
+    /* width: 2px; */
+    padding:10px 323px 10px 5px;
+}
+.inpute .Messager{
+    padding:10px 323px 50px 5px;
+}
+.btn2{
+    text-align: center;
+}
+.btn2 button{
+    margin-bottom: 100px;
+    font-weight: 700;
+    margin-top: 40px;
+    background-color: #e6c8c3;
+    padding: 5PX 20PX;
+    border-color: #e6c8c3 ;
+}
+.sec-6dig1{
+    height: 210px;
+    top: 0;
+    left: 10px;
+}
+.sec-6dig22{
+    bottom: 72px;
+    right:0 ;
+}
+.sec-6dig2{
+    bottom: 72px;
+    right:0 ;
+}
+footer{
+    background-color: #484f5b;
+}
+.row11{
+    color: rgba(255, 255, 255, 0.626);
+    display: flex;
+    padding: 20px;
+}
+.col-15{
+    width: 15%;
+}
+.col-20{
+    width: 20%;
+}
+.col-40{
+    width: 40%;
+}
+.fote{
+    padding: 15px 0px;
+    color: white;
+}
+.halimu{
+    padding: 20px 70px 20px 3px;
+}
+.col-40 img{
+    margin: 10px;
+}
