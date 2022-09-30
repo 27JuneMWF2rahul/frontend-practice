@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td{   
+            height: 5px;   
+            border: 2px solid black;
+            border-collapse: collapse;
+           
+        }
+        td{
+            text-align:center ;
+            width: 300px;
+            height: 50px;
+        }
+        td img{
+            width: 200px;
+        }
+        img{
+            transition: all 3s;
+            width: 400px;
+        }
+        .trans-scale img:hover{
+            transform: scale(1.7);
+        }
+        .trans-scale2 img:hover{
+            transform: scale(-1.7);
+        }
+        .trans-matrix img:hover{
+            transform: matrix(1, 2, 3, 4, 5, 6);
+
+        }
+        .trans-translate img:hover{
+            transform: translate(30px,50%);
+        }
+        .trans-rotate img:hover{
+            transform: rotate(0.90turn);
+        }
+        .trans-skew img:hover{
+            transform: skew(30deg,20deg);
+        }
+        .box{
+            height: 190px;
+            width: 180px;
+            background-color: #ad1313;
+            border-radius: 12px;
+            display: inline-block;
+            margin: 10px 20px 10px 20px;
+            transition: 0.4s ease-in;
+        }
+        .b1{
+            transform-origin:left center;
+        }
+        .b1:hover{
+            transform: perspective(300px) rotatey(45deg);
+            opacity: 0.8;
+        }
+        .b2{
+            transform-origin: bottom;
+        }
+        .b2:hover{
+            opacity: 0.8;
+            transform: perspective(300px) rotateX(45deg);
+        }
+        .b3{
+            transform-origin: right center;
+        }
+        .b3:hover{
+            opacity: 0.8;
+            transform: perspective(300px) rotateY(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="box b1">text</td>
+            <td class="trans-translate"><img src="./emoji3.png" alt=""></td>
+            <td class="trans-matrix"><img src="emoji2.webp" alt=""></td>
+        </tr>
+        <tr>
+            <td class="box b3">text</td>
+            <td class="trans-scale"><img src="./emoji.png" alt=""></td>
+            <td class="trans-scale2"><img src="./emoji.png" alt=""></td>
+        </tr>
+        <tr>
+            <td class="box b2">text</td>
+            <td class="trans-rotate"><img src="emoji4.png" alt=""></td>
+            <td class="trans-skew"><img src="emoji5.webp" alt=""></td>
+        </tr>
+    </table>
+</body>
+</html>
