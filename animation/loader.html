@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @-webkit-keyframes spin{
+            0%{
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @keyframes spin{
+            0%{
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+                -webkit-transform: rotate(360deg);
+            }
+        }
+        @-webkit-keyframes anti_spin {
+            0%{
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+                -webkit-transform: rotate(-360deg);
+            }
+        }
+        @keyframes anti_spin{
+            0%{
+                transform: rotate(0deg);
+                -webkit-transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(-360deg);
+                -webkit-transform: rotate(-360deg);
+            }
+        }
+        body{
+            width: 100%;
+            height: 100%;
+            background-color: #333;
+        }
+        .loader{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%,-50%);
+        }
+        .loader span{
+            position: absolute;
+            display: block;
+            opacity: 0.75;
+            margin: 5px auto;
+            border-radius:50%;
+            border: 30px solid;
+        }
+        .loaderspan .redCircle{
+            height: 250px;
+            width: 250px;
+            background-color: transparent;
+            border-color: #e74c3c transparent transparent transparent;
+            animation: spin 5s infinite linear;
+            -webkit-animation: 5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div>
+            <span class="redCircle"></span>
+        </div>
+    </div>
+</body>
+</html>
