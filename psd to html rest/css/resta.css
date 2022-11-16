@@ -318,3 +318,69 @@ nav ul li a{
   bottom: -108px;
   left: 149px;
  }
+ @media (max-width:500px){
+  .container{
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    /* text-align: center; */
+    /* text-align: justify ; */
+  }
+  
+  .row{
+    display: block;
+  }
+  .head{
+    width: 100%;
+    padding: 0;
+  }
+  .sec1shepe-1{
+    display: none;
+  }
+  .popular{
+    font-size: 20px;
+  }
+  .head h1{
+    font-size: 50px;
+    line-height: normal;
+    /* margin: 0 auto; */
+    padding: 0px;
+    margin: 0;
+  }
+  .col-50{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+  }
+  .col-30{
+    width: 100%;
+    text-align: center;
+    /* margin: 40px 0; */
+  }
+  .free{
+    font-size: 50px;
+  }
+  .food{
+    font-size: 20px;
+  }
+  .sec-6bg{
+    height:700px;
+    
+  }.order p{
+    font-size: 47px;
+  }
+  .sec-6shepe{
+    height: 700px;
+  }
+  .sec-6{
+    margin-top: 100px;
+  }
+  .sec-2shepe2{
+    display: none;
+  }
+  .sec-6 .col-30{
+    display: flex;
+    width: 30%;
+  }
+ }
