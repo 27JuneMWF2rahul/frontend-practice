@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"></script>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li value="0"><i class="fa-solid fa-house"></i></li>
+            <li value="1"><i class="fa-solid fa-heart"></i></li>
+            <li value="2"><i class="fa-solid fa-plus"></i></li>
+            <li value="3"><i class="fa-solid fa-user"></i></li>
+            <li value="4"><i class="fa-solid fa-gear"></i></li>
+            <div id="circle">
+                <li><i class="fa-solid fa-plus"></i></li>
+            </div>
+        </ul>
+    </div>
+    <script>
+        let links = document.getElementsByTagName("li");
+        let circle = document.getElementById("circle");
+        for(link of links){
+            link.onclick = function(){
+               for(link of links){
+
+                
+                link.style.opacity = "1";
+               }
+
+                circle.style.left = (50 * this.value) + "px";
+                circle.innerHTML = this.innerHTML;
+                this.style.opacity = "0";
+            }
+        }
+    </script>
+</body>
+</html>
