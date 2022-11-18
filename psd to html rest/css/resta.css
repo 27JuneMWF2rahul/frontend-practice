@@ -318,69 +318,75 @@ nav ul li a{
   bottom: -108px;
   left: 149px;
  }
- @media (max-width:500px){
+ @media(max-width:480px){
   .container{
     width: 100%;
-    padding: 20px;
-    font-size: 30px;
-    /* text-align: center; */
-    /* text-align: justify ; */
-  }
-  
-  .row{
-    display: block;
+    text-align: center;
   }
   .head{
-    width: 100%;
-    padding: 0;
+    width: 80%;
+    /* font-size: 10px; */
+    padding: 20px 0;
   }
-  .sec1shepe-1{
-    display: none;
-  }
-  .popular{
+  .head p{
     font-size: 20px;
   }
   .head h1{
-    font-size: 50px;
-    line-height: normal;
-    /* margin: 0 auto; */
-    padding: 0px;
-    margin: 0;
+    font-size: 40px;
+    line-height: 50px;
   }
-  .col-50{
-    padding: 0;
-    margin: 0;
-    height: auto;
-    width: 100%;
-  }
-  .col-30{
-    width: 100%;
-    text-align: center;
-    /* margin: 40px 0; */
-  }
-  .free{
-    font-size: 50px;
-  }
-  .food{
-    font-size: 20px;
-  }
-  .sec-6bg{
-    height:700px;
-    
-  }.order p{
-    font-size: 47px;
-  }
-  .sec-6shepe{
-    height: 700px;
-  }
-  .sec-6{
-    margin-top: 100px;
-  }
-  .sec-2shepe2{
+  .sec1shepe-1 ,.sec-2shepe ,.sec-2shepe2, .sec-4shepe{
     display: none;
   }
-  .sec-6 .col-30{
-    display: flex;
-    width: 30%;
+  .shepe1{display: none;}
+  
+  nav ul li{
+    display: none;
   }
+  .row{
+    /* display: grid; */
+    flex-wrap: wrap;
+  }
+  .col-50{
+    /* display: flex; */
+    width: 90%;
+    margin: 0 auto;
+
+  }
+  .border{
+    padding: 20px 0;
+
+  }
+  
+  .col-30{
+    /* width:100%; */
+    width:90%;
+    margin: 10px auto;
+    border: 2px solid black;
+    /* display: block; */
+  }
+ 
+  .sec-2text{
+    font-size: 20px;
+    padding: 0;
+  }
+  .sec-6{
+   
+    padding: 130px 0;
+  }
+  .sec-6 .col-30{
+    border: none;
+  }
+
+  .discount {
+    font-size: 50px;
+    font-weight: 700;
+}
+.january{
+  font-size: 48px;
+}
+.sec-4 ,.sec-5{
+  width: 100%;
+  
+}
  }
