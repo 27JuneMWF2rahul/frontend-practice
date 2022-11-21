@@ -93,6 +93,7 @@ nav ul li a{
 }
 .row{
   display: flex;
+  overflow-x: hidden;
 
 }
 .col-30{
@@ -390,3 +391,37 @@ nav ul li a{
   
 }
  }
+ .slide-left{
+  opacity: 0;
+  animation: slideleft 1s linear forwards;
+}
+@keyframes slideleft{
+  0%{
+      transform: translate(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translate(0px);
+      opacity: 1;
+  }
+}
+.slide-left{
+  animation-delay: 1s;
+}
+ .slide-left2{
+  opacity: 0;
+  animation: slideleft2 1s linear forwards;
+}
+@keyframes slideleft2{
+  0%{
+      transform: translate(100px);
+      opacity: 0;
+  }
+  100%{
+      transform: translate(0px);
+      opacity: 1;
+  }
+}
+.slide-left2{
+  animation-delay: 3s;
+}
