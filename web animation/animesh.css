@@ -126,7 +126,7 @@ button:hover{
 }
 @keyframes slideleft{
     0%{
-        transform: translate(100px);
+        transform: translate(-100px);
         opacity: 0;
     }
     100%{
