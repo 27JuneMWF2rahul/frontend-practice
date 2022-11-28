@@ -81,10 +81,14 @@ nav ul li a:hover::after{
     margin-left: -10px;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
+}
+.text-box h1:hover{
     background-image: url(../img/white\ and\ blak.webp);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 20s linear infinite;
+    cursor: pointer;
+    
 }
 @keyframes back{
     100%{
