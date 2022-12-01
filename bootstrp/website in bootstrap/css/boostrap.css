@@ -1,0 +1,16 @@
+@font-face{
+    font-family: 'Dancing Script';
+    src: url(../font/DancingScript-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'Dancing Script';
+}
+.carousel-item img{
+    width: 100%;
+    height: 80vh;
+}
