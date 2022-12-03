@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <img src="./img/city.webp" id="slider_data_item" alt="">
+    </section>
+    <script>
+        function slider_text1() {
+            document.getElementById("slider_data_item").src="./img/city3.webp";
+        };
+
+        function slider_text2() {
+            document.getElementById("slider_data_item").src="./img/city4.jpg";
+        };
+
+        function slider_text3() {
+            document.getElementById("slider_data_item").src="./img/city2.jpg";
+        };
+
+        
+        setInterval(slider_text1, 2000); 
+        setInterval(slider_text2, 4000);
+        setInterval(slider_text3, 6000);
+    </script>
+</body>
+</html>

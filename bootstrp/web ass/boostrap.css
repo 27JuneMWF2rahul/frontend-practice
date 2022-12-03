@@ -1,0 +1,13 @@
+.header-bg{
+    background-color: coral;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon{
+    background-color: transparent;
+    
+}
+
+.color{
+    color: coral !important;
+    font-size: 30px;
+}
