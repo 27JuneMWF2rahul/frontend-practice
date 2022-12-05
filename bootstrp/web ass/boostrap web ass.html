@@ -21,9 +21,9 @@
 </head>
 
 <body>
-    <header class="header-bg ">
+    <header class="header-bg " id="Home">
         <div class="container">
-            <nav class="navbar navbar-expand-lg ">
+            <nav class="navbar navbar-expand-lg fixed-top header-bg ">
                 <div class="container-fluid">
                     <a class="navbar-brand " href="#">Logo</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -34,25 +34,21 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item px-3">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page" href="#Home">Home</a>
                             </li>
                             <li class="nav-item px-3">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="#About">About</a>
                             </li>
                             <li class="nav-item dropdown px-3">
-                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown
+                                <a class="nav-link" href="#services" role="button" >
+                                    services
                                 </a>
-                                <!-- <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul> -->
                             </li>
                             <li class="nav-item px-3">
-                                <a class="nav-link disabled">Disabled</a>
+                                <a class="nav-link " href="#pricing">pricing</a>
+                            </li>
+                            <li class="nav-item px-3">
+                                <a class="nav-link " href="#contact">contact</a>
                             </li>
                         </ul>
 
@@ -80,7 +76,7 @@
             </form>
         </div>
     </header>
-    <section>
+    <section id="About">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8"  data-aos="fade-right" data-aos-duration="3000">
@@ -109,7 +105,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="services">
         <div class="container text-center">
             <div class="fw-bold py-2">SERVICES</div>
             <div class="row align-items-start py-2" >
@@ -241,20 +237,7 @@
             </div>
         </div>
     </section>
-    <!-- 
-    <style>
-        .carousel-control-next-icon,
-        .carousel-control-prev-icon{
-            background-color: transparent;
-            
-        }
-
-        .color{
-            color: blue !important;
-            font-size: 30px;
-        }
-    </style> -->
-    <section>
+    <section id="pricing">
         <div class="container">
             <div class="text-center">
                 <h2> PRICING </h2>
@@ -314,7 +297,7 @@
 
 
 
-    <section>
+    <section id="contact">
         <div class="container my-3">
             <div class="text-center">
                 <h2>CONTACT</h2>
