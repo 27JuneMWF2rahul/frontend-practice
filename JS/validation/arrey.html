@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <p> Objects allow you to store keyed collections of values. That's fine.</p>
+
+    <p> But quite often we find that we need an ordered collection, where we have a 1st, a 2nd, a 3rd element and so on.
+        For example, we need that to store a list of something: users, goods, HTML elements etc.</p>
+
+    <p> It is not convenient to use an object here, because it provides no methods to manage the order of elements. We
+        can't insert a new property “between” the existing ones. Objects are just not meant for such use.</p>
+
+    <p> There exists a special data structure named Array, to store ordered collections.</p>
+
+    let arr = new Array();
+    let arr = [];
+
+    <pre>
+        Array is a special kind of object, suited to storing and managing ordered data items.
+
+        The declaration:
+
+        // square brackets (usual)
+        let arr = [item1, item2...];
+
+        // new Array (exceptionally rare)
+        let arr = new Array(item1, item2...);
+        The call to new Array(number) creates an array with the given length, but without elements.
+
+        The length property is the array length or, to be precise, its last numeric index plus one. It is auto-adjusted by array methods.
+        If we shorten length manually, the array is truncated.
+        Getting the elements:
+
+        we can get element by its index, like arr[0]
+        also we can use at(i) method that allows negative indexes. For negative values of i, it steps back from the end of the array. If i >= 0, it works same as arr[i].
+        We can use an array as a deque with the following operations:
+
+        push(...items) adds items to the end.
+        pop() removes the element from the end and returns it.
+        shift() removes the element from the beginning and returns it.
+        unshift(...items) adds items to the beginning.
+        To loop over the elements of the array:
+
+        for (let i=0; i<arr.length; i++) – works fastest, old-browser-compatible.
+        for (let item of arr) – the modern syntax for items only,
+        for (let i in arr) – never use.
+        To compare arrays, don’t use the == operator (as well as >, < and others), as they have no special treatment for arrays. They handle them as any objects, and it’s not what we usually want.
+
+        Instead you can use for..of loop to compare arrays item-by-item.
+
+        We will continue with arrays and study more methods to add, remove, extract elements and sort arrays in the next chapter Array methods.
+    </pre>
+    <ul>
+        <li>
+            <p>To add/remove elements:</p>
+            <ul>
+                <li><code>push(...items)</code> – adds items to the end,</li>
+                <li><code>pop()</code> – extracts an item from the end,</li>
+                <li><code>shift()</code> – extracts an item from the beginning,</li>
+                <li><code>unshift(...items)</code> – adds items to the beginning.</li>
+                <li><code>splice(pos, deleteCount, ...items)</code> – at index <code>pos</code> deletes
+                    <code>deleteCount</code> elements and inserts <code>items</code>.</li>
+                <li><code>slice(start, end)</code> – creates a new array, copies elements from index <code>start</code>
+                    till <code>end</code> (not inclusive) into it.</li>
+                <li><code>concat(...items)</code> – returns a new array: copies all members of the current one and adds
+                    <code>items</code> to it. If any of <code>items</code> is an array, then its elements are taken.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>To search among elements:</p>
+            <ul>
+                <li><code>indexOf/lastIndexOf(item, pos)</code> – look for <code>item</code> starting from position
+                    <code>pos</code>, return the index or <code>-1</code> if not found.</li>
+                <li><code>includes(value)</code> – returns <code>true</code> if the array has <code>value</code>,
+                    otherwise <code>false</code>.</li>
+                <li><code>find/filter(func)</code> – filter elements through the function, return first/all values that
+                    make it return <code>true</code>.</li>
+                <li><code>findIndex</code> is like <code>find</code>, but returns the index instead of a value.</li>
+            </ul>
+        </li>
+        <li>
+            <p>To iterate over elements:</p>
+            <ul>
+                <li><code>forEach(func)</code> – calls <code>func</code> for every element, does not return anything.
+                </li>
+            </ul>
+        </li>
+        <li>
+            <p>To transform the array:</p>
+            <ul>
+                <li><code>map(func)</code> – creates a new array from results of calling <code>func</code> for every
+                    element.</li>
+                <li><code>sort(func)</code> – sorts the array in-place, then returns it.</li>
+                <li><code>reverse()</code> – reverses the array in-place, then returns it.</li>
+                <li><code>split/join</code> – convert a string to array and back.</li>
+                <li><code>reduce/reduceRight(func, initial)</code> – calculate a single value over the array by calling
+                    <code>func</code> for each element and passing an intermediate result between the calls.</li>
+            </ul>
+        </li>
+        <li>
+            <p>Additionally:</p>
+            <ul>
+                <li><code>Array.isArray(value)</code> checks <code>value</code> for being an array, if so returns
+                    <code>true</code>, otherwise <code>false</code>.</li>
+            </ul>
+        </li>
+    </ul>
+    <script>
+        // let arr = new Array();
+        // let arr = [];
+        let Marks = [50, 60, 90, 70]
+        console.log(Marks);
+        console.log(Marks[0]);
+        Marks.forEach(element => {
+            console.log(element);
+        });
+        let fruits = ["Apple", "Orange", "Plum"];
+
+        console.log(fruits);
+        fruits[20] = 'Pear'; // now ["Apple", "Orange", "Pear"]
+        console.log(fruits);
+        fruits[25] = 'data'; // now ["Apple", "Orange", "Pear"]
+        console.log(fruits);
+        console.log(fruits.length); // 3
+
+        // mix of values
+        let arr_mix = ['Apple', { name: 'John' }, true, function () { alert('hello'); }];
+
+        // get the object at index 1 and then show its name
+        console.log(arr_mix[1].name); // John
+
+        // get the function at index 3 and run it
+        arr_mix[3](); // hello
+
+        let fruits_at = ["Apple", "Orange", "Plum"];
+
+        // same as fruits[fruits.length-1]
+        console.log(fruits.at(-1)); // Plum.
+
+
+        let fruits_pop = ["Apple", "Orange", "Pear"];
+        console.log(fruits_pop.pop()); // remove "Pear" and alert it
+        console.log(fruits_pop); // Apple, Orange
+
+
+        let fruits_push = ["Apple", "Orange"];
+        fruits_push.push("Pear");
+        console.log(fruits_push); // Apple, Orange, Pear
+
+
+        let fruits_shift = ["Apple", "Orange", "Pear"];
+        console.log(fruits_shift.shift()); // remove Apple and alert it
+        console.log(fruits_shift); // Orange, Pear
+
+        let fruits_unshift = ["Orange", "Pear"];
+        fruits_unshift.unshift('Apple');
+        console.log(fruits_unshift); // Apple, Orange, Pear
+
+        let fruits_for_of = ["Apple", "Orange", "Plum"];
+
+        // iterates over array elements
+        for (let fruit of fruits_for_of) {
+            console.log(fruit);
+        }
+
+        let arr_in = ["Apple", "Orange", "Pear"];
+
+        for (let key in arr_in) {
+            console.log(arr_in[key]); // Apple, Orange, Pear
+        }
+
+        let arr_String = [1, 2, 3];
+
+        console.log(arr_String); // 1,2,3
+        console.log(String(arr_String) === '1,2,3'); // true
+    </script>
+</body>
+
+</html>

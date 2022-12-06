@@ -1,3 +1,5 @@
+
+
 function clearErrors(){
     error = document.getElementsByClassName('formerror');
     for(let item of errors){
