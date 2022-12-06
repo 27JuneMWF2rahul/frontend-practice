@@ -7,20 +7,35 @@
 }
 .container{
     /* border: 2px solid ; */
-    width: 1270px;
+    width: 1330px;
     margin: 0 auto;
 }
 .pos-rel{
     position: relative;
 }
+.jsc{
+    justify-content:space-between ;
+}
+.ja{
+    justify-content: space-around;
+}
 .pos-ab{
     position: absolute;
+}
+.serchicon{
+    right:0;
+    top: 30px;
 }
 .logo img{
     margin: 15PX 60PX;
     color: black;
     width: 50%;
     /* background-color: black; */
+}
+.sec1icon{
+    background-color: #00bec9;
+    border: 2px solid aqua;
+
 }
 .logoicon{
     top: 30px;
@@ -33,7 +48,7 @@
 .logoicon img{
     border-radius: px;
     /* border: 2px solid blue; */
-    background-color: #00bec9;
+    
     height: 20px;
     width: 30px;
     
@@ -43,6 +58,7 @@
 }
 .nav{
     display: flex;
+    flex-wrap: wrap;
     background-color: #d0a30e;
     color: white;
 }
@@ -75,7 +91,7 @@
 .flex{
     display: flex;
     flex-wrap:wrap;
-    flex-direction: row;
+
 }
 .one{
     font-size: 58px;
@@ -86,7 +102,7 @@
     margin: 0 auto;
 }
 .sec-1img img{
-    width: 80%;
+    width: 50%;
 }
 .btn{
     margin: 20px 0px;
@@ -175,10 +191,9 @@
     font-size: 20px;
 }
 .sec3img img{
-    width: 270px;
+    width:100%;
 }
 .col-30{
-    margin: 0 auto;
     width: 30%;
 }
 .thired{
@@ -361,4 +376,19 @@
 .as{
     font-weight: 700;
     font-size: 25px;
+}
+
+
+/* -------media----- */
+
+@media(max-width:370px){
+    .container{
+        width: 100%;
+    }
+    .col-50{
+        width: 100%;
+    }
+    .col-25{
+        width: 100%;
+    }
 }
