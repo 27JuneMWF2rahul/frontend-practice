@@ -16,6 +16,9 @@
 .jsc{
     justify-content:space-between ;
 }
+.justify-around{
+    justify-content: space-around;
+}
 .ja{
     justify-content: space-around;
 }
@@ -68,6 +71,8 @@
     display: flex;
 }
 .row{
+    display: flex;
+    flex-wrap: wrap;
     margin: 0 20px;
     /* display: flex; */
     margin: 0 20px;
@@ -88,11 +93,11 @@
     color:white;
     margin: 100px 50px;
 }
-.flex{
+/* .flex{
     display: flex;
     flex-wrap:wrap;
 
-}
+} */
 .one{
     font-size: 58px;
     padding: 10px 0px;
@@ -227,8 +232,9 @@
 }
 .sec5-text{
     color: white;
+    text-align: center;
     font-size: 30px;
-    margin-left: 80px;
+    /* margin-left: 80px; */
     margin-top: 20px;
     margin-bottom: 20px;
     /* margin: 10px 20px; */
@@ -367,7 +373,7 @@
     height: 50px;
 }
 .icon2{
-    padding: 10px 0px 10px 270px;
+    /* padding: 10px 0px 10px 270px; */
 }
 .icon2 img{
     margin: 10px 10px;
@@ -376,6 +382,12 @@
 .as{
     font-weight: 700;
     font-size: 25px;
+}
+.title-here{
+    margin-left: auto;
+}
+.ml{
+    margin-right: auto;
 }
 
 
@@ -388,7 +400,16 @@
     .col-50{
         width: 100%;
     }
-    .col-25{
+    .col-30{
         width: 100%;
+    }
+    .pos-ab{
+        position:absolute;
+    }
+    .sec2-img img{
+        margin: 0;
+    }
+    .one{
+        font-size: 31px;
     }
 }
