@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Books {
+            authorName = ""
+            constructor(author){
+                this.authorName = author
+            }
+            TowIdiots() {
+                console.log("TowIdiots ",this.authorName);
+            }
+            TowStates() {
+                
+            }
+        }
+        let jeManFaveTe = new Books('chintan');
+        let OtherObject = new Books('ganshyam');
+        jeManFaveTe.TowIdiots();
+        OtherObject.TowIdiots();
+    </script>
+</body>
+</html>
