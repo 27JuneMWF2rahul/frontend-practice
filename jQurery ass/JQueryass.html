@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        
+        .row {
+            display: flex;
+        }
+
+        .img-size {
+            width: 600px;
+            height: 500px;
+        }
+
+        .small-size {
+            width: 450px;
+            height: 250px;
+        }
+
+        #div {
+            margin-left: 10%;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            margin-bottom: 80px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <ol>
+            <div>
+                <h2>
+                    <li>What is <span>JQuery</span> ?</li>
+                </h2>
+                <ul type="square">
+                    <p><strong>Answere:</strong>
+                        <li>jQuery is a fast, small, cross-platform and feature-rich JavaScript library.</li>
+                        <li>The main purpose of jQuery is to provide an easy way to use JavaScript on your website to
+                            make it more interactive and attractive. It is also used to add animation.</li>
+                        <li>It is also very useful to simplify a lot of the complicated things from JavaScript, like
+                            AJAX calls and DOM manipulation.</li>
+
+                    <dl>
+                        <dt>Advantages of jQuery &raquo;</dt>
+                        <dd>&raquo; Easy to learn: jQuery is easy to learn because it supports same JavaScript style
+                            coding.</dd>
+                        <dd>&raquo; Write less do more: jQuery provides a rich set of features that increase developers'
+                            productivity by writing less and readable code.</dd>
+                        <dd>&raquo; Excellent API Documentation: jQuery provides excellent online API documentation.
+                        </dd>
+                        <dd>&raquo; Cross-browser support: jQuery provides excellent cross-browser support without
+                            writing extra code.</dd>
+                        <dd>&raquo; Unobtrusive: jQuery is unobtrusive which allows separation of concerns by separating
+                            html and jQuery code.</dd>
+                    </dl>
+
+                    <dl>
+                        <dt>jQuery Features &raquo;x</dt>
+                        <dd>HTML manipulation</dd>
+                        <dd>DOM manipulation</dd>
+                        <dd>DOM element selection</dd>
+                        <dd>CSS manipulation</dd>
+                        <dd>Effects and Animations</dd>
+                        <dd>Utilities</dd>
+                        <dd>AJAX</dd>
+                        <dd>HTML event methods</dd>
+                        <dd>JSON Parsing</dd>
+                        <dd>Extensibility through plug-ins</dd>
+                    </dl>
+                    <dl>
+                        <dt></dt>
+                        <dd>jQuery is a small, fast and lightweight JavaScript library.</dd>
+                        <dd>jQuery means "write less do more".</dd>
+                        <dd>jQuery is platform-independent.</dd>
+                        <dd>jQuery simplifies AJAX call and DOM manipulation.</dd>
+                    </dl>
+                    </p>
+            </div>
+            <div>
+                <h2>
+                    <li>How to Apply CSS Using JQuery ?</li>
+                </h2>
+                <ul type="square">
+                    <p><strong>Answere:</strong>
+                        <li>There are many types of CSS methods, which means that each method has the same name but
+                            takes
+                            different parameters. We will discuss only two methods, one of which is used to change a
+                            single
+                            CSS property, while the other is used to change multiple CSS properties simultaneously. With
+                            the
+                            second method, you can pass a JSON string object as a parameter that you want to apply to
+                            the
+                            HTML element.</li>
+                        <li>JSON string objects contain CSS properties along with their values, and the first method
+                            only
+                            takes 2 parameters, namely the property name and the value.</li>
+                        <br>
+                    <p class="row">
+                        <img src="./img/add-class.jpg" class="img-size" alt="">
+                        <img src="./img/add-class-effect.jpg" class="img-size" alt="">
+                    </p>
+                    </p>
+                </ul>
+            </div>
+
+            <div>
+                <h2>
+                    <li>How to Add Class and Remove Class in Jquery ?</li>
+                </h2>
+                <ul type="square">
+                    <p><strong>Answere:</strong>
+                    <p><b>Add Class:</b></p>
+                    <p>The jQuery addClass() method is used to add the class names to the selected elements. This is
+                        especially useful when you want to add styles to the existing elements on a page. For example,
+                        let’s say you want to change the font size and colour of the first paragraph. You can create a
+                        desired css style for that under a class name and assign the class name to the first paragraph
+                        using addClass() method.</p>
+                    <li>The addClass() or removeClass() methods are used to add the CSS classes when there is a need
+                        to add to our webpage when there is some event listener or to create some kind of effect.
+                    </li>
+                    <li>This method does not remove existing class attributes, it only adds one or more class names
+                        to the class attribute.</li>
+                    <strong>jQuery addClass() Method Syntax</strong> <span><mark>
+                            $(selector).addClass(classname)</mark></span>
+                    <p class="row">
+                        <img class="img-size" src="./img/add-class-js.jpg" alt="">
+                        <img class="img-size" src="./img/add-class-js-effect-output.jpg" alt="">
+                    </p>
+                    <p><b>RemoveClass:</b></p>
+                    <strong>jQuery addClass() Method Syntax</strong> <span><mark> .removeClass( className [, duration ]
+                            [, easing ] [, complete ] ) </mark></span>
+                    <ul>
+                        <li>
+                            <p>jQuery removeClass() is an inbuilt jQuery method that is used for the removal of one or
+                                more specified classes from each HTML element in the set of matched elements. One can
+                                remove more than one class at a time from the set of matched elements by separating them
+                                by a space. If a class name is passed as a parameter to the method, that means only that
+                                particular class will be removed. If no class name is passed as a parameter to the
+                                removeClass() method, it will remove all the classes. jQuery removeClass() can also be
+                                used in XML documents.
+                            </p>
+                        </li>
+                        <p class="row">
+                            <img class="img-size" src="./img/remove-class-js.jpg" alt="">
+                            <picture>
+                                <img class="small-size" src="./img/remove-class-js-output.avif" alt="">
+                                <img class="small-size" src="./img/remove-class-js-output-2.avif" alt="">
+                            </picture>
+                        </p>
+                    </ul>
+
+                    </p>
+                </ul>
+            </div>
+
+            <div>
+                <h2>
+                    <li>JQuery Animation ?</li>
+                </h2>
+                <p><strong>Answere:</strong>
+                <ul type="square">
+                    <li><strong>jQuery addClass() Method Syntax</strong> <span><mark>$(selector).animate({params},
+                                speed, callback); </mark></span></li>
+                    <ul>
+                        <li>params parameter defines the CSS properties to be animated.</li>
+                        <li>The speed parameter is optional and specifies the duration of the effect. It can be set as
+                            "slow" , "fast" or milliseconds.</li>
+                        <li>The callback parameter is also optional and it is a function which is executed after the
+                            animation completes.</li>
+                    </ul>
+
+                    <li>jQuery includes methods which give special effects to the elements on hiding, showing, changing
+                        style properties, and fade-in or fade-out operation.</li>
+                    <b>Example:</b>
+                    <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the
+                        position, remember to first set the CSS position property of the element to relative, fixed, or
+                        absolute!</p>
+                    <div id="div" style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+                    <button class="btn">Left Animation</button>
+                </ul>
+                </p>
+            </div>
+            <div>
+                <h2>
+                    <li>How to create slider with animation?</li>
+                </h2>
+                <p><strong>Answere:</strong>
+                </p>
+                <p>jQuery UI slider is used to obtain a numeric value within a certain range. The main advantage of slider over text input is that it becomes impossible for the users to enter an invalid value. Every value they can pick with the slider is valid.</p>
+                <p><a href="./img/slider" target="_blank"> <button>See Code</button></a></p>
+                <iframe src="./slider.html" width="500px" height="400px" name="myframename" frameborder="0"></iframe>
+                    <!-- <div class=""> -->
+                        
+                    <!-- </div> -->
+
+            </div>
+        </ol>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $(".btn").click(function () {
+                $("#div").animate({ left: '250px' });
+            });
+        });
+    </script>
+</body>
+
+</html>

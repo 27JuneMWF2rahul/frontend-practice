@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     
+        .slider-item img{
+            width: 100%;
+        }
+        .slider img{
+            height: 300px;
+        }
+        .slider-effect{
+            position: relative;
+            animation: slidereff 2s ;
+        }
+        @keyframes slidereff {
+            0%{ right: 2400px; }
+            100%{ right: 0px; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider">
+        <div class="slider-item"><img src="img/rawpixel-574846-unsplash.jpg" alt=""></div>
+        <div class="slider-item"><img src="img/add-class.jpg" alt=""></div>
+        <div class="slider-item"><img src="img/add-class-js-effect-output.jpg" alt=""></div>
+        <div class="slider-item"><img src="img/add-class-effect.jpg" alt=""></div>
+        <div class="slider-item"><img src="img/add-class.jpg" alt=""></div>
+        <div class="slider-item"><img src="img/remove-class-js-output-2.avif" alt=""></div>
+        <div class="slider-item"><img src="img/remove-class-js.jpg" alt=""></div>
+    </div>
+    <script>
+       
+        let SliderData = document.getElementsByClassName('slider-item');
+        counter = 0;
+        function Slider() {
+            console.log("called");
+            for (let index = 0; index < SliderData.length; index++) {
+                SliderData[index].style.display="none"
+                SliderData[index].classList.remove('slider-effect')
+                
+            }
+            if (counter>=SliderData.length) {
+                counter = 0;   
+            }
+            SliderData[counter].style.display="block"
+            console.log(SliderData[counter].classList);
+            SliderData[counter].classList.add('slider-effect')
+            counter++;
+            setTimeout(Slider, 2000);  
+        }
+        Slider()
+
+    </script>
+
+</body>
+
+</html>
