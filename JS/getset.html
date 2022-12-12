@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class CoffeeMachine {
+            _waterAmount = 0;
+            #waterLimit = 200;
+
+            set waterAmount(value) {
+                this._waterAmount=this._power
+                console.log("called waterAmount set",this._waterAmount);
+                if (value < 0) {
+                    value = 0;
+                }
+                this._waterAmount = value;
+            }
+
+            get waterAmount() {
+                console.log("called waterAmount get",this._waterAmount);
+                return this._waterAmount;
+            }
+
+            constructor(power) {
+                console.log(power);
+                this._power = power;
+            }
+
+        }
+
+        // create the coffee machine
+        let coffeeMachine = new CoffeeMachine(100);
+
+        // add water
+        coffeeMachine.waterAmount = -10; // _waterAmount will become 0, not -10
+        console.log(coffeeMachine.__proto__);
+    </script>
+</body>
+
+</html> 
