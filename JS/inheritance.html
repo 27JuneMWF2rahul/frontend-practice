@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        class MathOP {
+            constructor() {
+                console.log("called");
+            }
+            addition(a, b) {
+                // let a = 50;
+                // let b = 150;
+                console.log("addition a",a);
+                console.log("addition b",b);
+                return a + b
+            }
+        }
+
+        class AdvMathOP extends MathOP{
+            avgOfTow(x,y){
+                console.log("avgOfTow x",x);
+                console.log("avgOfTow y",y);
+                let additionres = this.addition(x,y)
+                console.log("Addition is ",additionres)
+                return additionres/2
+            }
+        }
+        let AdvMathOPObjec = new AdvMathOP;
+        let ans = AdvMathOPObjec.avgOfTow(50,90)
+        console.log("average is : ",ans );
+    </script>
+</body>
+
+</html>

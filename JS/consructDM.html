@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        class Mobile {
+            ProductOwner = ""
+            constructor(Compname) {
+                this.ProductOwner = Compname
+            }
+            TowIdiots() {
+                console.log("TowIdiots ",this.ProductOwner);
+            }
+            MobileModel(){
+                console.log("company : ",this.ProductOwner);
+                console.log("camera");
+                console.log("screen");
+                console.log("charger");
+            }
+            laptop(){
+                console.log("company : ",this.ProductOwner);
+                console.log("proccessor");
+                console.log("RAM");
+                console.log("HD");
+
+            }
+            ThreeStates() {
+            }
+        }
+        let JeManFaveTe = new Mobile('iphone');
+        // let OtherObject = new Mobile('ghanshyam');
+        JeManFaveTe.MobileModel();
+        JeManFaveTe.laptop();
+        let SamsunMob = new Mobile('samsung');
+        // let OtherObject = new Mobile('ghanshyam');
+        SamsunMob.MobileModel();
+        SamsunMob.laptop();
+        // OtherObject.TowIdiots();
+    </script>
+</body>
+
+</html>
