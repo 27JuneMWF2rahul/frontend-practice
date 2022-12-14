@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>The async function declaration declares an async function where the await keyword is permitted within the
+        function body. The async and await keywords enable asynchronous, promise-based behavior to be written in a
+        cleaner style, avoiding the need to explicitly configure promise chains.</p>
+    <script>
+        function resolveAfter2Seconds() {
+            console.log("called inside resolveAfter2Seconds");
+            return new Promise(resolve => {
+                setTimeout(() => {
+                    resolve('resolved');
+                }, 2000);
+            });
+        }
+        async function asyncCall() {
+            console.log("called");
+            const result = await resolveAfter2Seconds()
+            console.log(result);
+            console.log("after 2 sec called");
+        }
+        asyncCall()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        The Promise object represents the eventual completion (or failure) of an asynchronous operation and its
+        resulting value.
+    </p>
+    <p>
+        To learn about the way promises work and how you can use them, we advise you to read Using promises first.
+    </p>
+    <ul>
+        <li><em>pending</em>: initial state, neither fulfilled nor rejected.</li>
+        <li><em>fulfilled</em>: meaning that the operation was completed successfully.</li>
+        <li><em>rejected</em>: meaning that the operation failed.</li>
+    </ul>
+    <script>
+        const MyPromise = new Promise((resolve, rejected) => {
+            const a = 5
+            const b = 5
+            if (a == b) {
+                // resolve("resolve");
+                setTimeout(() => {
+                    resolve("foo");
+                }, 3000);
+            } else {
+                rejected("error server not connected");
+                // setTimeout(() => {
+                    // rejected("error server not connected");
+                // }, 3000);
+            }
+        }) 
+        console.log(MyPromise);
+        MyPromise.then((res)=>{
+            console.log(res);
+        }).catch((err) => {
+            console.log(err);
+        })
+    </script>
+</body>
+
+</html>
