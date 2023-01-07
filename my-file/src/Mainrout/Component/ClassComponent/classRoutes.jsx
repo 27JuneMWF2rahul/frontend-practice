@@ -8,8 +8,11 @@ import ClassCompoMenu from './ClassCompoMenu';
 
 import Clock from '../functionalComponet/Clock';
 import PropsInClassCompo from '../ClassComponent/03PropsInClassCompo';
-import StateInClassCompo from './04StateInClassCompo'
-import StateLifeCycleInClassCompo from './05StateLifeCycleInClassCompo'
+import StateInClassCompo from './04StateInClassCompo';
+import StateLifeCycleInClassCompo from './05StateLifeCycleInClassCompo';
+import ConditionalRenderingInClassCompo from './06ConditionalRenderingInClassCompo';
+import ListKeysInClassCompo from './07ListKeysInClassCompo';
+import ControlledCompoInClassCompo from './08ControlledCompoInClassCompo';
 
 
 
@@ -27,6 +30,9 @@ class classRoutes extends Component {
                             <li><Link to="propsinclass">props</Link></li>
                             <li><Link to="stateinclass">stateinclass</Link></li>
                             <li><Link to="statelifecycleinclass">state Lifecycleinclass</Link></li>
+                            <li><Link to="conditionalrendering">conditionalrendering</Link></li>
+                            <li><Link to="listandkeys">listandkeys</Link></li>
+                            <li><Link to="controlledcompo">controlledcompo</Link></li>
 
                             <Routes>
                                 <Route path="/" element={<ClassCompoMenu />} />
@@ -36,6 +42,9 @@ class classRoutes extends Component {
                                 <Route path="propsinclass" element={<PropsInClassCompo />} />
                                 <Route path="stateinclass" element={<StateInClassCompo />} />
                                 <Route path="statelifecycleinclass" element={<StateLifeCycleInClassCompo />} />
+                                <Route path="conditionalrendering" element={<ConditionalRenderingInClassCompo />} />
+                                <Route path="listandkeys" element={<ListKeysInClassCompo />} />
+                                <Route path="controlledcompo" element={<ControlledCompoInClassCompo />} />
 
                             </Routes>
                         </div>
