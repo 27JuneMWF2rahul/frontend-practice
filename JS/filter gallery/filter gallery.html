@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <ul>
+            <li class="link active" data-filter="all">All</li>
+            <li class="link" data-filter="camera">Camera</li>
+            <li class="link" data-filter="laptop">Laptop</li>
+            <li class="link" data-filter="mobail">Mobail</li>
+            <li class="link" data-filter="watch">Watch</li>
+            <li class="link" data-filter="headphones">Headphones</li>
+        </ul>
+        <div class="items">
+           <div class="itemBx" data-item="camera"><img src="img/camera.jpg" alt=""></div>
+           <div class="itemBx" data-item="mobail"><img src="img/mobail.jpg" alt=""></div>
+           <div class="itemBx" data-item="watch"><img src="img/watch.jpg" alt=""></div>
+           <div class="itemBx" data-item="laptop"><img src="img/laptop.jpg" alt=""></div>
+           <div class="itemBx" data-item="headphones"><img src="img/headphones.jpg" alt=""></div>
+           
+           <div class="itemBx" data-item="camera"><img src="img/camera.jpg" alt=""></div>
+           <div class="itemBx" data-item="mobail"><img src="img/mobail.jpg" alt=""></div>
+           <div class="itemBx" data-item="watch"><img src="img/watch.jpg" alt=""></div>
+           <div class="itemBx" data-item="laptop"><img src="img/laptop.jpg" alt=""></div>
+           <div class="itemBx" data-item="headphones"><img src="img/headphones.jpg" alt=""></div>
+           
+           <div class="itemBx" data-item="camera"><img src="img/camera.jpg" alt=""></div>
+           <div class="itemBx" data-item="mobail"><img src="img/mobail.jpg" alt=""></div>
+           <div class="itemBx" data-item="watch"><img src="img/watch.jpg" alt=""></div>
+           <div class="itemBx" data-item="laptop"><img src="img/laptop.jpg" alt=""></div>
+           <div class="itemBx" data-item="headphones"><img src="img/headphones.jpg" alt=""></div>
+
+        </div>
+    </section>
+    <script>
+        let list = document.querySelectorAll('.link');
+        let itemBx = document.querySelectorAll('itemBx');
+
+        for(let i=0; i<list.length; i++){
+            list[i].addEventListener('click',function(){
+                for(let j=0; j<list.length; j++)
+                {
+                    list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+
+                let dataFilter = this.getAttribute('data-filter');
+
+                for(let k=0; k<itemBx.length; k++){
+                    itemBx[k].classList.remove('active');
+                    itemBx[k].classList.add('hide');
+
+                    if(itemBx[k].getAttribute('data-item') == dataFilter || dataFilter == "all"){
+                        itemBx[k].classList.remove('hide');
+                        itemBx[k].classList.add(' active')
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+</html>
