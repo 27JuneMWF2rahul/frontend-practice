@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h2{
+            background-color: blue;
+            font-size: 25px;
+        }
+        body{
+            background-color: rgba(0, 0, 255, 0.572);
+        }
+    </style>
+</head>
+<body>
+
+
+
+   <h2> What is the arrow function in JavaScript?</h2>
+     <p> An arrow function expression is a compact alternative to a traditional function expression, with some semantic differences and deliberate limitations in usage: Arrow functions don't have their own bindings to this , arguments , or super , and should not be used as methods.</p>
+    <script>
+        let welcome = (name,age) =>  `Hello & Welcome ${name} - ${age}`;
+       
+
+        console.log(welcome("rahul vankar" , 25));
+    </script>
+</body>
+</html>
