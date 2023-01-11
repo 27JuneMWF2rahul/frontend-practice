@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literals</title>
+</head>
+<body>
+    <script>
+        // let name = "rahul";
+        // let course = "B.A";
+
+        // var obj = {
+        //     name ,
+        //     course ,
+        // };
+        // console.log(obj);
+
+        // let n = "Student";
+        // var obj = {
+        //     [n + "name"] : "rahul",
+        //     course : "B.A",
+        //     'detail show'(){
+        //         return`${this.Studentname} is student of ${this.course}`
+        //     }
+        // };
+        // console.log(obj);
+        // console.log(obj ['detail show']());
+
+
+        let fname = "vankar";
+        let lname = "rahul";
+        let course = "B.A";
+
+        function student(fname, lname, course){
+            let fullname = fname + " " + lname;
+            return{fullname , course};
+        }
+        let s = student(fname, lname, course);
+        console.log(s.fullname);
+        console.log(s.course);
+    </script>
+</body>
+</html>
