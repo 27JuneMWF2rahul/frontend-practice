@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring Array</title>
+</head>
+<body>
+    <script>
+      
+    //   let user = ["rahul", 25, "khedbhama", ["Male",25000]];
+
+    //   let [name, age = 23, city, [gendar,salary]] = user;
+
+    //   console.log(name);
+    //   console.log(age);
+    //   console.log(city);
+    //   console.log(gendar);
+    //   console.log(salary);  
+    
+    
+    
+    // function user([name,age = 20, city]){   
+    //     console.log(name);
+    //     console.log(age);
+    //     console.log(city);
+    // }
+    //  user(["rahul vankar", 21, "Khedbhama"]);
+    
+    
+     function user(){   
+      return["rahul vankar", 22, "khedbhama"]
+    }
+    let [name,age,city] = user();
+
+    console.log(city);
+
+     
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring object</title>
+</head>
+<body>
+
+    <h2>What is object destructuring in javascript</h2>
+    <p>JavaScript Object Destructuring is an expression which allows us to access the data from objects like arrays, objects, maps and assign it to new variables. Through this object destructuring, we can create variables easily from the object's properties.</p>
+    <script>
+        let user = {
+            name : "rahul",
+            age : 25,
+            city : "khedbhama"
+        }
+        let {name, age, city} = user;
+
+        console.log(user);
+        console.log(age);
+        console.log(city);
+    </script>
+</body>
+</html>
