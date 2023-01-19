@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // class emmployee{
+        //     constructor(name){
+        //         this.empname = name;
+        //         console.log("constructor : Employee" + name);
+        //     }
+        //     info(){
+        //         console.log("Employee Name :" + this.empname);
+
+        //     }
+        // }
+        // class manager extends emmployee{
+        //     info(){
+        //         console.log("Manager Name :" + this.empname);
+        //         super.info()
+
+        //     }
+        // }
+        // let a = new manager("rahul vankar");
+
+        // a.info();
+
+
+
+        class emmployee {
+            constructor(name, age, salary) {
+                this.empname = name;
+                this.empage = age;
+                this.emmpsalary = salary;
+                console.log("constructor : Employee" + name);
+            }
+            info() {
+                document.write(`<h3>Employee Class</h3>
+                            Name : ${this.empname}</br>
+                            Age : ${this.empage}</br>
+                            Salary :${this.emmpsalary}</br>`)
+
+            }
+        }
+        class manager extends emmployee {
+            info() {
+                let ta = 1000;
+                let pa = 300;
+                let totalsalary = this.emmpsalary + ta + pa;
+                document.write(`<h3>Employee Class</h3>
+                            Name : ${this.empname}</br>
+                            Age : ${this.empage}</br>
+                            Salary :${totalsalary}</br>`)
+
+
+            }
+        }
+        let a = new manager("rahul vankar", 25, 20000);
+        // let b = new emmployee("hitesh", 25, 2000);
+
+        a.info();
+        // b.info();
+    </script>
+</body>
+
+</html>
