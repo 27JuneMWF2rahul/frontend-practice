@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ajax</h1>
+    <p id="demo">Ajax=> Asynchronous JavaScript and XML</p>
+    <p>AJAX is technique for creating fast and dynamic web page</p>
+    <button onclick="loadData()">Click</button>
+    <script>
+     function loadData() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+         if(htis.readyState == 4 && this.status == 200){
+            console.log(this.responseText);
+         }
+        };
+
+        xhttp.open('GET',"content/readmi.text",true);
+        xhttp.send();
+     }
+     
+    </script>
+</body>
+</html>
