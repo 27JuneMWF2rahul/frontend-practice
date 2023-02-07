@@ -6,9 +6,10 @@
     list-style: none;
 }
 .container{
-    width: 1300px;
+    width: 1200px;
     margin: 0 auto;
 }
+
 
 /* .padding {
     padding: 0 20px;
@@ -102,16 +103,19 @@
     width: 60%;
 }
 
-/* -----sec-4---- */
+/* -----sec-2---- */
 .col-25 {
     width: 20%;
 }
 .sec-2{
     width: 90%;
-    height: 200px;
-    margin: 0 auto;
+    /* height: 200px; */
+    margin: 30px auto;
     background-color: #054C67;
+    background-size: cover;
+    padding: 5px 0;
     color: white;
+    border-radius: 30px;
 }
 
 .sec-2 span{
@@ -123,8 +127,93 @@
     padding: 64px 20px 15px 50px;
     border: 1px solid white;
     border-radius: 50px 0px;
+    margin: 20px 0;
   
 }
 .jsa{
     justify-content: space-around;
 }
+.col-30{
+    width: 30%;
+}
+.sec2-img img{
+    width: 100%;
+    height: 4rem;
+}
+.Company{
+    background-color: white;
+    border-radius: 0px 0 30px 30px;
+    margin: 30px;
+    padding: 30px 0;
+    color: black;
+    text-align: center;
+}
+.sec2-img i{
+    color: yellow;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* margin: 0 auto; */
+}
+
+/* ----sec-3---- */
+.sec-3{
+    width: 90%;
+    margin: 0 auto;
+}
+.sec-3bg{
+    background:linear-gradient(90deg,#095775 50% ,white);
+    /* height: 100vh; */
+    background-size: cover;
+}
+
+.placement {
+    color: white;
+    margin-top: 60px;
+}
+
+.placement h2{
+    color: yellow;
+    font-size: 30px;
+}
+
+.placement p{
+    font-size: 20px;
+    /* padding: 10px 10px; */
+}
+
+.placement ol{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 40px 10px;
+    line-height: 25px;
+}
+
+.btn-3 button{
+    padding: 7px 90px;
+}
+
+.sec3-img img{
+    width: 100%;
+}
+
+/* .....sec-4..... */
+.col-20{
+    width: 18%;
+}
+
+.sec-4{
+    text-align: center;
+}
+.sec-4 h2{
+    font-size: 30px;
+    color: blue;
+    display: inline-block;
+    margin: 50px 0;
+    border-bottom: 2px solid blue;
+}
+
+.sec4-img img{
+    width: 100%;
+}
+
+
