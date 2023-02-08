@@ -213,7 +213,11 @@
 }
 
 .sec4-img img{
+    background: white;
     width: 100%;
+    padding: 30px 0;
+    height: 150px;
+    box-shadow: 10px 8px 20px 2px black;
 }
 
 
