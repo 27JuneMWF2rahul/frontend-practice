@@ -5,10 +5,7 @@
     text-decoration: none;
     list-style: none;
 }
-.container{
-    width: 1200px;
-    margin: 0 auto;
-}
+
 
 
 /* .padding {
@@ -217,7 +214,129 @@
     width: 100%;
     padding: 30px 0;
     height: 150px;
-    box-shadow: 10px 8px 20px 2px black;
 }
 
+.sec4-img img:hover{
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.placed {
+    margin: 90px 0;
+}
+
+.sec4-img-placed img {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sec4-img-placed img:hover {
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.sec4-img-img img{
+    width: 100%;
+    margin: 55px 0;
+}
+
+/* .......sec-5..... */
+.sec-5{
+    text-align: center;
+}
+.sec-5 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    display: inline-block;
+    border-bottom: 2px solid blue;
+    margin: 50px 0;
+}
+
+.sec5-img img{
+    width: 100%;
+}
+
+.sec5-img img:hover{
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+/* ....sec-6.... */
+.sec-7 {
+    text-align: center;
+}
+
+.sec-7 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    display: inline-block;
+    border-bottom: 2px solid blue;
+    margin: 50px 0;
+}
+
+.sec7-img img{
+    width: 100%;
+    height: 300px;
+    padding: 30px 50px;
+}
+
+/* ....sec-8..... */
+.sec-8 {
+    text-align: center;
+}
+
+
+.sec-8 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    display: inline-block;
+    border-bottom: 2px solid blue;
+    margin: 50px 0;
+}
+
+.sec-8 p {
+    font-size: 15px;;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.sec8-img {
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-radius: 20px;   
+}
+
+.sec8-img:hover{
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.sec8-img button{
+    padding: 5px 30px;
+    background-color: rgba(0, 0, 0, 0.512);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+.sec8-img img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* .......sec-9........ */
+.sec-9 {
+    text-align: center;
+}
+
+
+.sec-9 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    width: 50%;
+    border-bottom: 2px solid blue;
+    margin: 50px 0;
+}
 
