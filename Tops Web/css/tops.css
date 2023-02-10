@@ -338,6 +338,30 @@
     color: blue;
     width: 50%;
     border-bottom: 2px solid blue;
-    margin: 50px 0;
+    margin: 50px auto;
+    align-items: center;
 }
 
+.box1{
+    /* width: 100% ; */
+    margin: 0 auto;
+    /* background-size: cover; */
+    /* height: auto ; */
+    margin: 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+.box2{
+    width: 50% ;
+    margin: 0 auto;
+    /* height: 350px ; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+.sec-9bg{
+    background:linear-gradient(120deg,#BF8686 20% ,#58F2ED73);
+    /* height: 100vh; */
+    background-size: cover;
+}
