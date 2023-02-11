@@ -4,6 +4,8 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    overflow-x: hidden;
+    /* overflow-y:unset; */
 }
 
 
@@ -15,6 +17,10 @@
 .jsc{
     justify-content: space-between;
 
+}
+.ju{
+    
+    border: 3px solid black;
 }
 .row{
     display:flex ;
@@ -176,14 +182,19 @@
 
 .placement p{
     font-size: 20px;
+    padding: 5px 0;
     /* padding: 10px 10px; */
 }
 
 .placement ol{
+    /* padding: 10px 0; */
     font-size: 20px;
     letter-spacing: 2px;
     padding: 40px 10px;
     line-height: 25px;
+}
+.placement ol li{
+    padding: 5px 0;
 }
 
 .btn-3 button{
@@ -207,17 +218,18 @@
     color: blue;
     display: inline-block;
     margin: 50px 0;
+    padding: 20px;
     border-bottom: 2px solid blue;
 }
 
 .sec4-img img{
     background: white;
     width: 100%;
-    padding: 30px 0;
-    height: 150px;
+    /* padding: 30px 0; */
+    height: 100px;
 }
 
-.sec4-img img:hover{
+.sec4-img:hover{
     box-shadow: 0px 0px 10px 0px black;
 }
 
@@ -337,6 +349,7 @@
     text-align: center;
     color: blue;
     width: 50%;
+    padding: 20px;
     border-bottom: 2px solid blue;
     margin: 50px auto;
     align-items: center;
