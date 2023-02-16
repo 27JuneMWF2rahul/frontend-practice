@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="css/resta.css" />
 </head>
 
@@ -15,17 +18,27 @@
       <img src="img/header shepe1.png" alt="" class="pos-ab sec1shepe-1" />
       <img src="img/header shep2.png" alt="" class="pos-ab sec1shepe-2" />
       <div class="container">
-        <nav>
-          <div class="logo">
-            <img src="img/header logo.png" alt="" />
+
+        <div class="topnav row jsc" id="myTopnav">
+          <!-- <div class="logo">
+          </div> -->
+          <div class="row align jsc">
+            <div>
+              
+              <a href="#news">
+    
+                <img src="./img/header logo.png" alt="">
+              </a>
+              <a href="#news">home</a>
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
           </div>
-          <ul>
-            <li><a href="#home"> Home</a></li>
-            <li><a href="#Ourmenu"> Our Meanu</a></li>
-            <li><a href="#"> Promo</a></li>
-            <li><a href="#"> Order</a></li>
-          </ul>
-        </nav>
+        </div>
         <div class="head">
           <h1>Healthy Food Restaurant</h1>
           <p>
@@ -236,6 +249,18 @@
       </div>
     </div>
   </section>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+
 </body>
 
 </html>

@@ -6,11 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="toggle.css">
+    <style>
+        /* .row{
+            display: flex;
+        }
+        .jsc{
+            justify-content: space-between;
+        } */
+    </style>
 </head>
 <body>
-    <div id="navigation">
-        <div id="menu" onclick="onClickMenu()">
-            <div id="bar1" class="bar"></div>
+    <div class="row jsc">
+        <div>
+            <h2>logo</h2>
+        </div>
+        <div id="navigation">
+         
+            <div id="menu" onclick="onClickMenu()">
+                <div id="bar1" class="bar"></div>
             <div id="bar2" class="bar"></div>
             <div id="bar3" class="bar"></div>
         </div>
@@ -22,6 +35,8 @@
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
+</div>
+    
     <script src="toggle.js"></script>
 </body>
 </html>
