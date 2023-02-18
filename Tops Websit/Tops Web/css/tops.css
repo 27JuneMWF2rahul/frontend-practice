@@ -1,0 +1,410 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    width: 1270px;
+    margin: 0 auto;
+}
+
+
+/* .padding {
+    padding: 0 20px;
+} */
+
+.jsc{
+    justify-content: space-between;
+
+}
+.row{
+    display:flex ;
+    flex-wrap: wrap;
+}
+.align{
+    align-items: center;
+}
+.logo img{
+    margin: 30px 0;
+    width: 300px;
+    /* height: 100px; */
+}
+.navbar {
+    background-color:#054C67;
+    border-radius: 27px 0 0 27px;
+    padding: 30px;
+    width: 60%;
+}
+.navbar ul {
+    display: flex;
+
+}
+
+.navbar ul li{
+    padding: 10px 20px;
+}
+.navbar ul li a{
+    color: white;
+    padding: 0px 20px;
+
+}
+
+
+/* ----sec-1---- */
+.sec-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.col-50{
+    width: 50%;
+}
+
+.sec1-text {
+    background-color: #054C67;
+    padding: 20px;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.sec1-text h2{
+    /* width: 48%; */
+    font-size: 50px;
+    color: white;
+    padding: 20px 5px;
+}
+
+.sec1-text span{
+    color: yellow;
+}
+
+.btn .btn1 {
+    padding: 10px 90px;
+    display: block;
+}
+
+.btn .btn2 {
+    background: transparent;
+    border:1px solid white;
+    color: white;
+    padding: 5px 7px;
+    margin: 20px 10px;
+}
+
+.img{
+    align-items: center;
+    text-align: center;
+}
+
+.img img{
+    width: 60%;
+}
+
+/* -----sec-2---- */
+.col-25 {
+    width: 20%;
+}
+.sec-2{
+    width: 90%;
+    /* height: 200px; */
+    margin: 30px auto;
+    background-color: #054C67;
+    background-size: cover;
+    padding: 5px 0;
+    color: white;
+    border-radius: 30px;
+}
+
+.sec-2 span{
+    font-size: 60px;
+    padding: 10px 20px;
+}
+
+.box {
+    padding: 64px 20px 15px 50px;
+    border: 1px solid white;
+    border-radius: 50px 0px;
+    margin: 20px 0;
+  
+}
+.jsa{
+    justify-content: space-around;
+}
+.col-30{
+    width: 30%;
+}
+.sec2-img img{
+    width: 100%;
+    height: 4rem;
+}
+.Company{
+    background-color: white;
+    border-radius: 0px 0 30px 30px;
+    margin: 30px;
+    padding: 30px 0;
+    color: black;
+    text-align: center;
+}
+.sec2-img i{
+    color: yellow;
+    /* text-align: center; */
+    /* align-items: center; */
+    /* margin: 0 auto; */
+}
+
+/* ----sec-3---- */
+.sec-3{
+    width: 90%;
+    margin: 0 auto;
+}
+.sec-3bg{
+    background:linear-gradient(90deg,#095775 50% ,white);
+    /* height: 100vh; */
+    background-size: cover;
+}
+
+.placement {
+    color: white;
+    margin-top: 60px;
+}
+
+.placement h2{
+    color: yellow;
+    font-size: 30px;
+}
+
+.placement p{
+    font-size: 20px;
+    /* padding: 10px 10px; */
+}
+
+.placement ol{
+    font-size: 20px;
+    letter-spacing: 2px;
+    padding: 40px 10px;
+    line-height: 25px;
+}
+
+.btn-3 button{
+    padding: 7px 90px;
+}
+
+.sec3-img img{
+    width: 100%;
+}
+
+/* .....sec-4..... */
+.col-20{
+    width: 18%;
+}
+
+.sec-4{
+    text-align: center;
+}
+.sec-4 h2{
+    font-size: 30px;
+    color: blue;
+    display: inline-block;
+    margin: 50px 0;
+    border-bottom: 2px solid blue;
+}
+
+.sec4-img img{
+    background: white;
+    width: 100%;
+    padding: 30px 0;
+    height: 150px;
+}
+
+.sec4-img img:hover{
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.placed {
+    margin: 90px 0;
+}
+
+.sec4-img-placed img {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sec4-img-placed img:hover {
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.sec4-img-img img{
+    width: 100%;
+    margin: 55px 0;
+}
+
+/* .......sec-5..... */
+.sec-5{
+    text-align: center;
+}
+.sec-5 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    display: inline-block;
+    border-bottom: 2px solid blue;
+    margin: 50px 0;
+}
+
+.sec5-img img{
+    width: 100%;
+}
+
+.sec5-img img:hover{
+    box-shadow: 0px 0px 10px 0px black;
+}
+/* -----sen-6----- */
+.sec-6 .main{ 
+   width: 50%;
+   margin: 10px auto;
+   text-align: center;
+
+}
+.sec-6 h2{
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    display: inline-block;
+    border-bottom: 2px solid blue;
+    margin: 20px 0;
+}
+.sec-6 .main input{
+    padding: 10px 60px;
+}
+.sec-6 .main button{
+    background-color: #054C67;
+    color: white;
+    padding: 10px 35px;
+    border-radius: 10px;
+}
+/* -----courses--- */
+.courses{
+    background: linear-gradient(60deg, #E5E5E5,#398EFC73);
+    text-align: center;
+}
+.select{
+    background-color:white ;
+    padding: 5px;
+    margin: 10px 0;
+}
+.select select:hover{
+    background-color: #054C67;
+}
+.select select{
+    width: 90%;
+    padding:10px 0 ;
+    outline: none;
+    border: none;
+}
+.btn4 button{
+    background-color: #095775;
+    color: white;
+    font-size: 18px;
+    border: #054C67;
+    border-radius: 10px;
+    padding: 8px 50px;
+    margin: 20px 0;
+}
+.btn5 button {
+    background-color:white;
+    color: #054C67;
+    font-size: 18px;
+    border: #054C67;
+    border-radius: 10px;
+    padding: 8px 50px;
+    margin: 20px 0;
+}
+
+
+/* ....sec-7.... */
+.sec-7 {
+    text-align: center;
+}
+
+.sec-7 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    display: inline-block;
+    border-bottom: 2px solid blue;
+    margin: 50px 0;
+}
+
+.sec7-img img{
+    width: 100%;
+    height: 300px;
+    padding: 30px 50px;
+}
+.Universities{
+    width: 100%;
+    height: 100px;
+}
+/* ....sec-8..... */
+.sec-8 {
+    text-align: center;
+}
+
+
+.sec-8 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    display: inline-block;
+    border-bottom: 2px solid blue;
+    margin: 50px 0;
+}
+
+.sec-8 p {
+    font-size: 15px;;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.sec8-img {
+    margin: 20px 0;
+    padding-bottom: 10px;
+    border-radius: 20px;   
+}
+
+.sec8-img:hover{
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.sec8-img button{
+    padding: 5px 30px;
+    background-color: rgba(0, 0, 0, 0.512);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    
+}
+
+.sec8-img img {
+    border-radius: 20px;
+    width: 100%;
+}
+
+/* .......sec-9........ */
+.sec-9 {
+    text-align: center;
+}
+
+
+.sec-9 h2 {
+    font-size: 40px;
+    text-align: center;
+    color: blue;
+    width: 50%;
+    border-bottom: 2px solid blue;
+    margin: 50px 0;
+}
+
