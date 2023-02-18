@@ -9,6 +9,12 @@
     width: 1270px;
     margin: 0 auto;
 }
+.pos-rel{
+    position: relative;
+}
+.pos-ab{
+    position: absolute;
+}
 
 
 /* .padding {
@@ -214,7 +220,8 @@
 
 .sec4-img img{
     background: white;
-    width: 100%;
+    width: 70%;
+    text-align: center;
     padding: 30px 0;
     height: 150px;
 }
@@ -396,15 +403,117 @@
 /* .......sec-9........ */
 .sec-9 {
     text-align: center;
+    background: linear-gradient(60deg ,#BF8686,#58F2ED73);
+}
+
+.student {
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
 }
 
 
-.sec-9 h2 {
+.student h2 {
     font-size: 40px;
     text-align: center;
     color: blue;
-    width: 50%;
+    /* width: 50%; */
     border-bottom: 2px solid blue;
-    margin: 50px 0;
+    margin: 20px 0;
+}
+
+.reviews {
+    width: 30%;
+    height: 300px;
+    background-color: #fff;
+    text-align: left;
+    /* margin: 50px; */
+    padding: 50px 20px;
+    margin: 90px auto;
+}
+
+.reviews h2 {
+    font-size: 20px;
+    color: grey;
+}
+
+.reviews h4 {
+    color: grey;
+}
+
+.reviews p {
+    color: grey;
+}
+
+.tops-img img{
+    width: 25%;
+    border-radius: 5px;
+    position: absolute;
+    top: -40px;
+    right: -25px;
+}
+
+/* ......footer...... */
+.bg-footer {
+    background-image: linear-gradient(rgb(49, 43, 43), rgb(54, 52, 52));
+}
+
+.footer {
+    padding-top: 70px;
+}
+
+.footer h2 {
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.img-logo img {
+    width: 100%;
+}
+
+.img-logo p {
+    padding-top: 40px;
+    color: rgb(161, 160, 160);
+}
+
+.social-img {
+    padding-top: 40px;
+
+}
+
+.social img {
+    width: 40%;
+    display: block;
+}
+
+.menu ul {
+    padding-top: 40px;
+}
+.menu ul li {
+    color: rgb(170, 167, 167);
+    list-style: disc;
+    padding: 7px 0;
+}
+.social-img i {
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 14%;
+    margin: 10px 0;
+}
+
+.cg-road {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    padding: 5px 0;
+    margin: 15px 0;
+}
+
+.copyright {
+    color: #d3cdcd;
+    padding: 10px 0;
 }
 
