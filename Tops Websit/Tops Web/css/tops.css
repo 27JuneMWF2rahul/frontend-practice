@@ -1,18 +1,21 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
-.container{
+
+.container {
     width: 1270px;
     margin: 0 auto;
 }
-.pos-rel{
+
+.pos-rel {
     position: relative;
 }
-.pos-ab{
+
+.pos-ab {
     position: absolute;
 }
 
@@ -21,52 +24,203 @@
     padding: 0 20px;
 } */
 
-.jsc{
+.jsc {
     justify-content: space-between;
 
 }
-.row{
-    display:flex ;
+
+.row {
+    display: flex;
     flex-wrap: wrap;
 }
-.align{
+
+.align {
     align-items: center;
 }
-.logo img{
-    margin: 30px 0;
+
+ .logo img {
+    margin: 0 0;
     width: 300px;
-    /* height: 100px; */
+    
+} 
+
+
+
+nav{
+    /* background-color: #054C67; */
+    height: 80px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 0px 0;
+    z-index: 100;
+    width: 100%;
 }
+nav ul{
+    
+    background: #054C67;
+    padding: 30px 0;
+    margin-left: auto;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.checkbtn i {
+    display: none;
+}
+
+label .logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 0px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: white;
+    /* font-size: 17px; */
+    padding: 4px 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active, a:hover {
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    float: right;
+    /* position: fixed;
+    top: 0;
+    /* left: 100px; */
+    /* right: 400px; */
+    z-index: 100; 
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+
+
+.checkbtn i{
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    color:white;
+    z-index: 100;
+    background-color: #054C67;
+    border-radius: 50%;
+    padding: 10px;
+} 
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label .logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn i {
+        display: block;
+        align-items: center;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 0;
+        left: -100%;
+        z-index: 1;
+        transition: all .5s;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover, a.active{
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    ;
+    src: url("../font/Roboto-Regular.ttf");
+}
+/* 
 .navbar {
-    background-color:#054C67;
+    background-color: #054C67;
     border-radius: 27px 0 0 27px;
     padding: 30px;
     width: 60%;
 }
+
 .navbar ul {
     display: flex;
 
 }
 
-.navbar ul li{
-    padding: 10px 20px;
+.navbar ul li {
+    padding: 10px 30px;
 }
-.navbar ul li a{
-    color: white;
-    padding: 0px 20px;
 
-}
+.navbar ul li a {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    /* padding: 0px 20px; */
+
+/* }  */
 
 
 /* ----sec-1---- */
-.sec-1{
+.sec-1 {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 40px 0;
+    margin-top: 100px;
 }
 
-.col-50{
+.col-50 {
     width: 50%;
 }
 
@@ -76,14 +230,14 @@
     border-radius: 0px 30px 30px 0px;
 }
 
-.sec1-text h2{
+.sec1-text h2 {
     /* width: 48%; */
     font-size: 50px;
     color: white;
     padding: 20px 5px;
 }
 
-.sec1-text span{
+.sec1-text span {
     color: yellow;
 }
 
@@ -94,18 +248,18 @@
 
 .btn .btn2 {
     background: transparent;
-    border:1px solid white;
+    border: 1px solid white;
     color: white;
     padding: 5px 7px;
     margin: 20px 10px;
 }
 
-.img{
+.img {
     align-items: center;
     text-align: center;
 }
 
-.img img{
+.img img {
     width: 60%;
 }
 
@@ -113,7 +267,8 @@
 .col-25 {
     width: 20%;
 }
-.sec-2{
+
+.sec-2 {
     width: 90%;
     /* height: 200px; */
     margin: 30px auto;
@@ -124,7 +279,7 @@
     border-radius: 30px;
 }
 
-.sec-2 span{
+.sec-2 span {
     font-size: 60px;
     padding: 10px 20px;
 }
@@ -134,19 +289,23 @@
     border: 1px solid white;
     border-radius: 50px 0px;
     margin: 20px 0;
-  
+
 }
-.jsa{
+
+.jsa {
     justify-content: space-around;
 }
-.col-30{
+
+.col-30 {
     width: 30%;
 }
-.sec2-img img{
+
+.sec2-img img {
     width: 100%;
     height: 4rem;
 }
-.Company{
+
+.Company {
     background-color: white;
     border-radius: 0px 0 30px 30px;
     margin: 30px;
@@ -154,7 +313,8 @@
     color: black;
     text-align: center;
 }
-.sec2-img i{
+
+.sec2-img i {
     color: yellow;
     /* text-align: center; */
     /* align-items: center; */
@@ -162,12 +322,13 @@
 }
 
 /* ----sec-3---- */
-.sec-3{
+.sec-3 {
     width: 90%;
     margin: 0 auto;
 }
-.sec-3bg{
-    background:linear-gradient(90deg,#095775 50% ,white);
+
+.sec-3bg {
+    background: linear-gradient(90deg, #095775 50%, white);
     /* height: 100vh; */
     background-size: cover;
 }
@@ -175,42 +336,45 @@
 .placement {
     color: white;
     margin-top: 60px;
+    
 }
 
-.placement h2{
+.placement h2 {
     color: yellow;
-    font-size: 30px;
+    font-size: 40px;
 }
 
-.placement p{
-    font-size: 20px;
+.placement p {
+    font-size: 25px;
     /* padding: 10px 10px; */
 }
 
-.placement ol{
-    font-size: 20px;
+.placement ol {
+    font-size: 25px;
     letter-spacing: 2px;
     padding: 40px 10px;
-    line-height: 25px;
+    line-height: 40px;
 }
 
-.btn-3 button{
+.btn-3 button {
     padding: 7px 90px;
+    margin: 10px 0;
 }
 
-.sec3-img img{
+.sec3-img img {
     width: 100%;
 }
 
 /* .....sec-4..... */
-.col-20{
+.col-20 {
     width: 18%;
 }
 
-.sec-4{
+.sec-4 {
     text-align: center;
 }
-.sec-4 h2{
+
+.sec-4 h2 {
     font-size: 30px;
     color: blue;
     display: inline-block;
@@ -218,7 +382,7 @@
     border-bottom: 2px solid blue;
 }
 
-.sec4-img img{
+.sec4-img img {
     background: white;
     width: 70%;
     text-align: center;
@@ -226,8 +390,8 @@
     height: 150px;
 }
 
-.sec4-img img:hover{
-    box-shadow: 0px 0px 10px 0px black;
+.sec4-img img:hover {
+    /* box-shadow: 0px 0px 10px 0px black; */
 }
 
 .placed {
@@ -243,15 +407,16 @@
     box-shadow: 0px 0px 10px 0px black;
 }
 
-.sec4-img-img img{
-    width: 100%;
-    margin: 55px 0;
+.sec4-img-img img {
+    width: 90%;
+    margin: 55px 10px;
 }
 
 /* .......sec-5..... */
-.sec-5{
+.sec-5 {
     text-align: center;
 }
+
 .sec-5 h2 {
     font-size: 40px;
     text-align: center;
@@ -261,57 +426,69 @@
     margin: 50px 0;
 }
 
-.sec5-img img{
+.sec5-img img {
     width: 100%;
 }
 
-.sec5-img img:hover{
+.sec5-img:hover {
     box-shadow: 0px 0px 10px 0px black;
 }
+
 /* -----sen-6----- */
-.sec-6 .main{ 
-   width: 50%;
-   margin: 10px auto;
-   text-align: center;
+.sec-6 .main {
+    width: 50%;
+    margin: 10px auto;
+    text-align: center;
 
 }
-.sec-6 h2{
+
+.sec-6 h2 {
     font-size: 40px;
     text-align: center;
     color: blue;
     display: inline-block;
     border-bottom: 2px solid blue;
-    margin: 20px 0;
+    margin: 40px 0;
 }
-.sec-6 .main input{
+
+.sec-6 .main input {
     padding: 10px 60px;
+    ;
 }
-.sec-6 .main button{
+
+.sec-6 .main button {
     background-color: #054C67;
     color: white;
     padding: 10px 35px;
     border-radius: 10px;
 }
+
 /* -----courses--- */
-.courses{
-    background: linear-gradient(60deg, #E5E5E5,#398EFC73);
+.courses {
+    margin-top: 40px;
+    background: linear-gradient(60deg, #E5E5E5, #398EFC73);
     text-align: center;
+    padding: 40px 10px;
 }
-.select{
-    background-color:white ;
+
+.select {
+    background-color: white;
     padding: 5px;
     margin: 10px 0;
 }
-.select select:hover{
+
+.select select:hover {
     background-color: #054C67;
 }
-.select select{
+
+.select select {
     width: 90%;
-    padding:10px 0 ;
+    padding: 10px 0;
     outline: none;
     border: none;
 }
-.btn4 button{
+
+.btn4 button {
     background-color: #095775;
     color: white;
     font-size: 18px;
@@ -320,8 +497,9 @@
     padding: 8px 50px;
     margin: 20px 0;
 }
+
 .btn5 button {
-    background-color:white;
+    background-color: white;
     color: #054C67;
     font-size: 18px;
     border: #054C67;
@@ -345,15 +523,17 @@
     margin: 50px 0;
 }
 
-.sec7-img img{
+.sec7-img img {
     width: 100%;
     height: 300px;
     padding: 30px 50px;
 }
-.Universities{
+
+.Universities {
     width: 100%;
     height: 100px;
 }
+
 /* ....sec-8..... */
 .sec-8 {
     text-align: center;
@@ -370,7 +550,8 @@
 }
 
 .sec-8 p {
-    font-size: 15px;;
+    font-size: 15px;
+    ;
     letter-spacing: 1px;
     line-height: 25px;
 }
@@ -378,21 +559,22 @@
 .sec8-img {
     margin: 20px 0;
     padding-bottom: 10px;
-    border-radius: 20px;   
-}
-
-.sec8-img:hover{
+    border-radius: 20px;
     box-shadow: 0px 0px 10px 0px black;
 }
 
-.sec8-img button{
+.locate {
+    padding: 20px 0;
+}
+
+.sec8-img button {
     padding: 5px 30px;
     background-color: rgba(0, 0, 0, 0.512);
     color: white;
     font-weight: 600;
     border: none;
     border-radius: 8px;
-    
+
 }
 
 .sec8-img img {
@@ -403,7 +585,7 @@
 /* .......sec-9........ */
 .sec-9 {
     text-align: center;
-    background: linear-gradient(60deg ,#BF8686,#58F2ED73);
+    background: linear-gradient(60deg, #BF8686, #58F2ED73);
 }
 
 .student {
@@ -420,6 +602,7 @@
     /* width: 50%; */
     border-bottom: 2px solid blue;
     margin: 20px 0;
+    padding: 10px 0;
 }
 
 .reviews {
@@ -430,6 +613,7 @@
     /* margin: 50px; */
     padding: 50px 20px;
     margin: 90px auto;
+    border-radius: 10px;
 }
 
 .reviews h2 {
@@ -445,7 +629,7 @@
     color: grey;
 }
 
-.tops-img img{
+.tops-img img {
     width: 25%;
     border-radius: 5px;
     position: absolute;
@@ -489,11 +673,13 @@
 .menu ul {
     padding-top: 40px;
 }
+
 .menu ul li {
     color: rgb(170, 167, 167);
     list-style: disc;
     padding: 7px 0;
 }
+
 .social-img i {
     font-size: 30px;
     display: block;
@@ -517,3 +703,260 @@
     padding: 10px 0;
 }
 
+
+/* ------media-query---- */
+
+@media screen and (max-width:920px) {
+    .container {
+        width: 100%;
+        overflow-x: hidden;
+        /* background-color: red; */
+    }
+
+    .navbar {
+        width: 50%;
+        padding: 0;
+        align-items: center;
+        margin: 5px 0;
+    }
+
+    .navbar ul li {
+        padding: 30px 10px;
+        font-size: 0;
+    }
+
+    .navbar ul li a {
+        font-size: 15px;
+    }
+
+    .logo img {
+        margin: 0;
+    }
+
+    .sec-2 {
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+
+    .sec-6 h2 {
+        font-size: 30px;
+    }
+
+    .select select {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .col-25 {
+        width: 50%;
+    }
+
+    .sec1-text {
+        border-radius: 0;
+    }    
+
+    .sec1-text h2 {
+        font-size: 40px;
+    }
+
+    .box {
+        padding: 28px 20px 28px 51px;
+        /* border: 1px solid white; */
+        border-radius: 22px 0px;
+        margin: 20px 24px;
+    }
+
+    .sec2-img img {
+        width: 87%;
+        height: 2rem;
+    }
+
+    .placement {
+        text-align: center;
+    }
+
+    .sec-4 h2 {
+        margin-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .sec4-img-img img {
+        margin: 55px 20px;
+    }
+
+    .sec-5 h2 {
+        font-size: 28px;
+    }
+
+    .col-25 {
+        width: 40%;
+    }
+
+    .courses {
+        padding: 30px 40px;
+    }
+    .courses .col-50 {
+        width: 50%;
+        /* padding: 40px 10px; */
+    }
+
+    .btn4 button {
+        padding: 8px 40px;
+    }
+
+    .sec-7 h2 {
+        font-size: 30px;
+    }
+
+    .sec-8 h2 {
+        font-size: 30px;
+    }
+
+    .menu {
+        padding: 20px 0;
+    }
+
+    .menu ul {
+        padding-top: 0;
+    }
+
+    .social {
+        padding: 20px 0;
+    }
+
+    .social-img {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .sec1-text h2 {
+        font-size: 22px;
+    }
+
+    .btn .btn1 {
+        padding: 6px 20px;
+        margin: 0 auto;
+    }
+
+    .sec-2 h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .sec-2 span {
+        font-size: 35px;
+    }
+
+    .box {
+        text-align: center;
+    }
+
+    .col-25 {
+        width: 100%;
+    }
+
+    .col-30 {
+        width: 60%;
+    }
+
+    .col-50 {
+        width: 100%;
+    }
+
+    .Company {
+        border-radius: 10px;
+    }
+
+    .sec2-img {
+        margin: 10px 0;
+    }
+
+    .placement ol {
+        font-size: 19px;
+        padding: 0;
+    }
+
+    .placement h2 {
+        font-size: 25px;
+    }
+
+    .placement p {
+        font-size: 17px;
+        line-height: 50px;
+    }
+
+    .sec-4 h2 {
+        font-size: 30px;
+        margin: 20px 0;
+        padding: 10px 0;
+    }
+
+    .sec-5 {
+        padding: 0 20px;
+    }
+
+    .sec5-img {
+        margin: 10px 0;
+        border: 1px solid black;
+    }
+
+    .sec-6 h2 {
+        font-size: 20px;
+    }
+
+    .sec-6 .main {
+        width: 90%;
+    }
+
+    .sec-6 .main input {
+        padding: 10px 30px;
+        margin-bottom: 10px;
+    }
+
+    .courses .col-50 {
+        width: 100%;
+        /* padding: 40px 10px; */
+    }
+
+    .sec-7 h2 {
+        font-size: 32px;
+    }
+
+    .sec7-img img {
+        width: 100%;
+        height: 200px;
+        padding: 0px 20px;
+        margin: 5px 0;
+    }
+
+    .sec-8 {
+        padding: 0 30px;
+    }
+
+    .student h2 {
+        font-size: 27px;
+    }
+
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .copyright {
+        font-size: 11px ;
+    }
+}
