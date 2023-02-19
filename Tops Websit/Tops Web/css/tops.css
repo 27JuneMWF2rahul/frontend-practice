@@ -88,6 +88,20 @@ nav ul li {
     margin: 0 5px;
 }
 
+nav ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background:linear-gradient(60deg,#0082e6,white);
+    display:  block;
+    margin: auto;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+nav ul li:hover::after{
+    width: 80%;
+}
+
 nav ul li a {
     color: white;
     /* font-size: 17px; */
@@ -96,13 +110,13 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-a.active, a:hover {
+/* a.active, a:hover {
     background: #1b9bff;
     transition: .5s;
-}
+} */
 
 .checkbtn {
-    font-size: 30px;
+    font-size: 23px;
     color: white;
     line-height: 80px;
     float: right;
@@ -124,7 +138,7 @@ a.active, a:hover {
     color:white;
     z-index: 100;
     background-color: #054C67;
-    border-radius: 50%;
+    border-radius: 33%;
     padding: 10px;
 } 
 #check {
@@ -230,6 +244,14 @@ a.active, a:hover {
     border-radius: 0px 30px 30px 0px;
 }
 
+
+.sec1-text .btn2:hover {
+    border-radius: 10px;
+    /* color: black; */
+    box-shadow: inset 0 0 5px 0 white;
+    /* cursor: pointer; */
+}
+
 .sec1-text h2 {
     /* width: 48%; */
     font-size: 50px;
@@ -241,10 +263,20 @@ a.active, a:hover {
     color: yellow;
 }
 
-.btn .btn1 {
+.btn .btn1 ,.btn-3 button{
     padding: 10px 90px;
     display: block;
+    outline: none;
+    border: none;
+    
 }
+.btn .btn1:hover,.btn-3 button:hover{
+    box-shadow: 1px 1px 1px 2px white   , inset 5px 5px 15px #054C67;
+	/* font-size: 15px; */
+	transition: 500ms;
+    border-radius: 5px;
+}
+
 
 .btn .btn2 {
     background: transparent;
@@ -289,6 +321,12 @@ a.active, a:hover {
     border: 1px solid white;
     border-radius: 50px 0px;
     margin: 20px 0;
+    transition: all .5s;
+    
+}
+.box:hover{
+    border-radius: 30px 30px;
+    box-shadow: inset 0px 0px 10px white;
 
 }
 
@@ -303,6 +341,10 @@ a.active, a:hover {
 .sec2-img img {
     width: 100%;
     height: 4rem;
+}
+.sec2-img i:hover{
+    color: blue;
+    cursor: pointer;
 }
 
 .Company {
@@ -429,7 +471,9 @@ a.active, a:hover {
 .sec5-img img {
     width: 100%;
 }
-
+.sec5-img{
+    border: 2px solid blue;
+}
 .sec5-img:hover {
     box-shadow: 0px 0px 10px 0px black;
 }
@@ -452,15 +496,27 @@ a.active, a:hover {
 }
 
 .sec-6 .main input {
-    padding: 10px 60px;
-    ;
+    padding: 10px 10px;
+    width: 50%;
+    
 }
 
 .sec-6 .main button {
+    color:greenyellow;
     background-color: #054C67;
-    color: white;
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 10px 35px;
     border-radius: 10px;
+    transition: all 1s;
+    font-weight: 700;
+}
+
+.sec-6 .main button:hover {
+    background-color: green;
+    color:#2c3e50;
+    
+
 }
 
 /* -----courses--- */
@@ -551,7 +607,6 @@ a.active, a:hover {
 
 .sec-8 p {
     font-size: 15px;
-    ;
     letter-spacing: 1px;
     line-height: 25px;
 }
@@ -561,6 +616,7 @@ a.active, a:hover {
     padding-bottom: 10px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0px black;
+ 
 }
 
 .locate {
@@ -670,11 +726,11 @@ a.active, a:hover {
     display: block;
 }
 
-.menu ul {
+.menu ol {
     padding-top: 40px;
 }
 
-.menu ul li {
+.menu ol li {
     color: rgb(170, 167, 167);
     list-style: disc;
     padding: 7px 0;
@@ -751,6 +807,14 @@ a.active, a:hover {
 @media screen and (max-width: 600px) {
     .container {
         width: 100%;
+    }
+
+    nav ul {
+        border-radius: 0;
+    }
+
+    nav ul li {
+        margin: 0;
     }
 
     .navbar ul {
