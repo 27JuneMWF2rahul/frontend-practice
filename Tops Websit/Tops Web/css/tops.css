@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+@font-face{
+    font-family: 'popines';
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-family: 'popines';
 }
 
 .container {
+    /* overflow-x: hidden; */
     width: 1270px;
     margin: 0 auto;
 }
@@ -79,7 +86,7 @@ label .logo {
 
 nav ul {
     float: right;
-    margin-right: 20px;
+    /* margin-right: 20px; */
 }
 
 nav ul li {
@@ -248,7 +255,7 @@ nav ul li a {
 .sec1-text .btn2:hover {
     border-radius: 10px;
     /* color: black; */
-    box-shadow: inset 0 0 5px 0 white;
+    /* box-shadow: inset 0 0 5px 0 white; */
     /* cursor: pointer; */
 }
 
@@ -270,12 +277,12 @@ nav ul li a {
     border: none;
     
 }
-.btn .btn1:hover,.btn-3 button:hover{
+/* .btn .btn-3 button:hover{
     box-shadow: 1px 1px 1px 2px white   , inset 5px 5px 15px #054C67;
-	/* font-size: 15px; */
+
 	transition: 500ms;
     border-radius: 5px;
-}
+} */
 
 
 .btn .btn2 {
@@ -418,10 +425,10 @@ nav ul li a {
 
 .sec-4 h2 {
     font-size: 30px;
-    color: blue;
+    color:#469fd7;
     display: inline-block;
     margin: 50px 0;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #469fd7;
 }
 
 .sec4-img img {
@@ -457,14 +464,15 @@ nav ul li a {
 /* .......sec-5..... */
 .sec-5 {
     text-align: center;
+    overflow-x: hidden;
 }
 
 .sec-5 h2 {
     font-size: 40px;
     text-align: center;
-    color: blue;
+    color:#469fd7;
     display: inline-block;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #469fd7;
     margin: 50px 0;
 }
 
@@ -472,10 +480,11 @@ nav ul li a {
     width: 100%;
 }
 .sec5-img{
-    border: 2px solid blue;
+    border: 2px solid #469fd7;
 }
+ 
 .sec5-img:hover {
-    box-shadow: 0px 0px 10px 0px black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 /* -----sen-6----- */
@@ -489,9 +498,9 @@ nav ul li a {
 .sec-6 h2 {
     font-size: 40px;
     text-align: center;
-    color: blue;
+    color: #469fd7;
     display: inline-block;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #469fd7;
     margin: 40px 0;
 }
 
@@ -573,9 +582,9 @@ nav ul li a {
 .sec-7 h2 {
     font-size: 40px;
     text-align: center;
-    color: blue;
+    color: #469fd7;
     display: inline-block;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #469fd7;
     margin: 50px 0;
 }
 
@@ -599,9 +608,9 @@ nav ul li a {
 .sec-8 h2 {
     font-size: 40px;
     text-align: center;
-    color: blue;
+    color: #469fd7;
     display: inline-block;
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #469fd7;
     margin: 50px 0;
 }
 
@@ -654,9 +663,9 @@ nav ul li a {
 .student h2 {
     font-size: 40px;
     text-align: center;
-    color: blue;
+    color: #469fd7;
     /* width: 50%; */
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid #469fd7;
     margin: 20px 0;
     padding: 10px 0;
 }
@@ -695,7 +704,10 @@ nav ul li a {
 
 /* ......footer...... */
 .bg-footer {
-    background-image: linear-gradient(rgb(49, 43, 43), rgb(54, 52, 52));
+    /* background-color:#033042; */
+    margin-top: 30px;
+    background: linear-gradient(90deg, #095775 50%, white);
+    color: white;
 }
 
 .footer {
@@ -703,7 +715,7 @@ nav ul li a {
 }
 
 .footer h2 {
-    color: #fff;
+    /* color: #fff; */
     font-family: sans-serif;
 }
 
@@ -713,7 +725,7 @@ nav ul li a {
 
 .img-logo p {
     padding-top: 40px;
-    color: rgb(161, 160, 160);
+    /* color: rgb(161, 160, 160); */
 }
 
 .social-img {
@@ -731,7 +743,7 @@ nav ul li a {
 }
 
 .menu ol li {
-    color: rgb(170, 167, 167);
+    /* color: rgb(170, 167, 167); */
     list-style: disc;
     padding: 7px 0;
 }
@@ -752,10 +764,11 @@ nav ul li a {
     border-radius: 3px;
     padding: 5px 0;
     margin: 15px 0;
+    color: #054C67;
 }
 
 .copyright {
-    color: #d3cdcd;
+    /* color: #d3cdcd; */
     padding: 10px 0;
 }
 
@@ -1023,4 +1036,90 @@ nav ul li a {
     .copyright {
         font-size: 11px ;
     }
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    #vantajs {
+        max-height: 100vh;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+.nav ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* background: #000; */
+}
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    /* background: #111; */
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #0082e6, #1b9bff );
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background: #111; */
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
