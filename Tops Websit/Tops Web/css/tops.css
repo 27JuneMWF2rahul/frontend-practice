@@ -825,9 +825,12 @@ nav ul li a {
     padding: 10px 0;
 }
 
-.slider_1 .reviews.active {
+/* .review {
     height: 630px !important;
-}
+    background-color: red !important;
+    color: red !important;
+    display: none;
+} */
 
 
 .reviews {
@@ -849,9 +852,7 @@ nav ul li a {
 .reviews h4 {
     color: grey;
 }
-.slider_1 .reviews.active {
-    height: 230px !important;
-}
+
 .reviews p {
     color: grey;
 }
@@ -1300,4 +1301,82 @@ nav ul li a {
     0% { background-position: 0 0; }
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
+}
+
+
+.swiper {
+    padding-bottom: 60px !important;
+    height: 250px;
+}
+
+.swiper .swiper-wrapper {
+    align-items: center;
+}
+
+.swiper .swiper-slide {
+    border-radius: 5px;
+    height: 180px !important;
+    background-color: #000;
+    border: 1px solid #fff;
+    transition: 0.2s;
+}
+
+.swiper .swiper-slide.active {
+    height: 230px !important;
+}
+
+.swiper .prev,
+.swiper .next {
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.65;
+    transition: 0.2s;
+}
+
+.swiper .prev:hover,
+.swiper .next:hover {
+    opacity: 1;
+}
+
+.swiper .prev svg,
+.swiper .next svg {
+    width: 20px;
+    height: 20px;
+}
+
+.swiper .prev svg path,
+.swiper .next svg path {
+    fill: #fff;
+}
+
+.swiper .prev {
+    left: 25px;
+}
+
+.swiper .next {
+    right: 25px;
+}
+
+.swiper .pagination {
+    margin-left: 8px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    z-index: 100;
+}
+
+.swiper .pagination span {
+    font-size: 0;
+    opacity: 1;
+    margin: 0px 6px !important;
+    border: 1px solid #fff;
+}
+
+.swiper .pagination span.swiper-pagination-bullet-active {
+    background-color: transparent;
+    transform: scale(1.5);
 }

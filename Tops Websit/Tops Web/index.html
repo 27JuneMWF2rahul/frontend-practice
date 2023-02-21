@@ -26,7 +26,11 @@
     <header>
         <!-- <div class="container"> -->
 
-        <marquee behavior="" direction=""><a href="https://www.tops-int.com/" target="_blank"> New Admissions Open for Career and Placement Courses.</a> &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp;<a href="https://www.tops-int.com/" target="_blank"> New Admissions Open for Career and Placement Courses.</a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a href="https://www.tops-int.com/" target="_blank">New Admissions Open for Career and Placement Courses.</a></marquee>
+        <marquee behavior="" direction=""><a href="https://www.tops-int.com/" target="_blank"> New Admissions Open for
+                Career and Placement Courses.</a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a
+                href="https://www.tops-int.com/" target="_blank"> New Admissions Open for Career and Placement
+                Courses.</a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<a href="https://www.tops-int.com/"
+                target="_blank">New Admissions Open for Career and Placement Courses.</a></marquee>
 
         <nav class="pos-rel row align" data-aos="fade-left" data-aos-duration="3000">
 
@@ -154,21 +158,27 @@
                         <div class="col-30">
                             <div class="sec2-img">
                                 <img src="img/google-img (2).png" alt="">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i><i class="fa-regular fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i><i
+                                    class="fa-regular fa-star"></i>
                                 <p>4.5(1038)</p>
                             </div>
                         </div>
                         <div class="col-30">
                             <div class="sec2-img">
                                 <img src="img/facebook-img.png" alt="">
-                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i><i class="fa-regular fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i><i
+                                    class="fa-regular fa-star"></i>
                                 <p>4.5(1038)</p>
                             </div>
                         </div>
                         <div class="col-30">
                             <div class="sec2-img">
                                 <img src="img/justdial-img.png" alt="">
-                                                               <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i><i class="fa-regular fa-star"></i>
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star-half"></i><i class="fa-regular fa-star"></i><i
+                                    class="fa-regular fa-star"></i>
                                 <p>4.5(1038)</p>
                             </div>
                         </div>
@@ -660,7 +670,7 @@
                 </div>
                 <!-- <div class="slider"> -->
                 <div class="slider_1">
-                    <div class="reviews pos-rel swiper-wrapper">
+                    <div class="reviews pos-rel">
                         <div class="review">
                             <h2>Muskan Shaikha</h2>
                             <h4>Software Developer</h4>
@@ -847,10 +857,13 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"
         integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+        <!-- Styles -->
+        <link href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" rel="stylesheet">
+        <!-- Script -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"></script>
     <script src="js/slick.min.js"></script>
-   
 
-    
+
     <script>
 
         $('.homeslider').slick({
@@ -932,17 +945,17 @@
 
 
 
-        $('.slider_1').slick({
+        $('.slider_11').slick({
 
             infinite: false,
-            pauseOnHover:true,
-
-            speed: 1000,
+            speed: 9000,
+            centerMode: false,
+            centerPadding: '60px',
+            slidesToShow: 3,
             slidesToShow: 3,
             autoplay: true,
             slidesToScroll: 1,
             arrows: false,
-            slideActiveClass: "active",
             responsive: [
                 {
                     breakpoint: 1024,
@@ -971,6 +984,39 @@
                 // settings: "unslick"
                 // instead of a settings object
             ]
+        });
+        const swiper = new Swiper(".slider_1", {
+            slidesPerView: 4,
+            spaceBetween: 50,
+            loop: true,
+            grabCursor: true,
+            centeredSlides: true,
+            slideActiveClass: "active",
+            navigation: {
+                nextEl: ".next",
+                prevEl: ".prev"
+            },
+            pagination: {
+                el: ".pagination",
+                clickable: true
+            },
+            autoplay: {
+                enabled: true,
+                delay: 5000
+            },
+            // Media
+            // breakpoints: {
+            //   // when window width is >= 320px
+            //   320: {
+            //     slidesPerView: 2,
+            //     spaceBetween: 20
+            //   },
+            //   // when window width is >= 480px
+            //   480: {
+            //     slidesPerView: 4,
+            //     spaceBetween: 30
+            //   },
+            // }
         });
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
