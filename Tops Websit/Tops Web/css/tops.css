@@ -47,7 +47,7 @@
 
  .logo img {
     margin: 0 0;
-    width: 300px;
+    width: 260px;
     
 } 
 
@@ -107,8 +107,11 @@ nav ul li::after{
 }
 nav ul li:hover::after{
     width: 80%;
+  
 }
-
+nav ul li a:hover{
+    color:#0082e6;
+}
 nav ul li a {
     color: white;
     /* font-size: 17px; */
@@ -262,7 +265,7 @@ nav ul li a {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    animation: imgs 2s alternate infinite ;
+    animation:imgs 0.7s linear infinite alternate;
     
     
 }
@@ -503,8 +506,11 @@ nav ul li a {
     width: 100%;
     height: 4rem;
 }
+.sec2-img i {
+    color:#054C67;
+}
 .sec2-img i:hover{
-    color: blue;
+    color:gold;
     cursor: pointer;
 }
 
@@ -517,12 +523,7 @@ nav ul li a {
     text-align: center;
 }
 
-.sec2-img i {
-    color: yellow;
-    /* text-align: center; */
-    /* align-items: center; */
-    /* margin: 0 auto; */
-}
+
 
 /* ----sec-3---- */
 .sec-3 {
@@ -824,6 +825,11 @@ nav ul li a {
     padding: 10px 0;
 }
 
+.slider_1 .reviews.active {
+    height: 630px !important;
+}
+
+
 .reviews {
     width: 30%;
     height: 300px;
@@ -843,7 +849,9 @@ nav ul li a {
 .reviews h4 {
     color: grey;
 }
-
+.slider_1 .reviews.active {
+    height: 230px !important;
+}
 .reviews p {
     color: grey;
 }
@@ -858,16 +866,18 @@ nav ul li a {
 
 /* ......footer...... */
 .bg-footer {
-    /* background-color:#033042; */
+    background-color: #000000bf;
     margin-top: 30px;
-    background: linear-gradient(90deg, #095775 50%, white);
-    color: white;
+    /* background: linear-gradient(90deg,  rgba(43, 41, 41, 0.555), rgba(255, 192, 203, 0.664)); */
+    color:white;
 }
 
 .footer {
     padding-top: 70px;
 }
-
+.footer ol li{
+    list-style: none;
+}
 .footer h2 {
     /* color: #fff; */
     font-family: sans-serif;
@@ -898,20 +908,34 @@ nav ul li a {
 
 .menu ol li {
     /* color: rgb(170, 167, 167); */
-    list-style: disc;
+    /* list-style: disc; */
     padding: 7px 0;
+}
+.menu ol li i{
+    padding-right:20px ;
+    transition: all 1s;
+    cursor: pointer;
+}
+.menu ol li i:hover {
+    padding-right: 40px;
+    color: #3c92b4;
+}
+.menu ol li:hover{
+    color: #1599ce;
 }
 
 .social-img i {
     font-size: 30px;
     display: block;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid ; */
     border-radius: 50%;
     width: 14%;
     margin: 10px 0;
 }
-
+.social-img i:hover{
+    color: #0082e6;
+}
 .cg-road {
     background-color: #fff;
     text-align: center;
@@ -1218,7 +1242,7 @@ nav ul li a {
 }
 
 .glow-on-hover {
-    width: 220px;
+    width: 296px;
     height: 50px;
     border: none;
     outline: none;

@@ -121,7 +121,9 @@
 {
     margin-bottom: 30px;
 }
-
+.slider_1 .reviews.active {
+    height: 230px !important;
+}
 .slick-dots
 {
     position: absolute;
