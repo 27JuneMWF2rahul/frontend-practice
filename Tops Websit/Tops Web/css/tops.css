@@ -265,37 +265,47 @@ nav ul li a {
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    animation:imgs 0.7s linear infinite alternate;
+  
+    transition: all ease-in 1s;
     
     
 }
 .sec-img img:hover{
-    transform: scale(5);
+    transform: scale(1.5)
+
 }
 
 .sec-1img1{
     top: 65px;
     right: 50px;
+    animation:imgs 0.6s linear infinite alternate;
+}
+.sec-1img1:hover{
+    transform: scaleY(1)
 }
 .sec-1img2{
     top: 19px;
     left: 140px;
     /* width: 20px;
     height: 30px; */
+    animation:imgs 0.7s linear infinite alternate;
 }
 .sec-1img3{
     top: 23px;
-    right: 152px
+    right: 152px;
+    animation:imgs 0.8s linear infinite alternate;
 }
 
 .sec-1img4 {
     left: 0;
     top: 235px;
+    animation:imgs 0.9s linear infinite alternate;
 }
 
 .sec-1img5 {
     bottom: 14px;
     right: 140px;
+    animation:imgs 1s linear infinite alternate;
 }
 
 .sec-1img6 {
@@ -303,28 +313,31 @@ nav ul li a {
     right: 220px;
     height: 90px !important;
     width: 90px !important;
+    animation:imgs 1.2s linear infinite alternate;
 }
 
 .sec-1img7 {
     top: 190px;
     right: 45px;
-
+    animation:imgs 1.4s linear infinite alternate;
 }
 
 .sec-1img8 {
     top: 135px;
     left: -15px;
-
+    animation:imgs 1.6s linear infinite alternate;
 }
 
 .sec-1img9 {
     bottom: 0;
     right: 230px;
+    animation:imgs 1.8s linear infinite alternate;
 }
 
 .sec-1img10 {
     top: 81px;
     right: 230px;
+    animation:imgs 2s linear infinite alternate;
 }
 
 /* .sec-1img11 {
@@ -335,74 +348,86 @@ nav ul li a {
 .sec-1img12 {
     top: 250px;
     left: 140px;
-    
+    animation:imgs 2.2s linear infinite alternate;
 }
 
 .sec-1img13 {
     bottom: 30px;
     /* top: 319px; */
     right: 227px;
+    animation:imgs 2.4s linear infinite alternate;
 }
 
 .sec-1img14 {
     top: 245px;
     right: 141px;
+    animation:imgs .6s linear infinite alternate;
 }
 
 .sec-1img15 {
     top: 180px;
     left: 50px;
+    animation:imgs 0.7s linear infinite alternate;
 }
 
 .sec-1img16 {
     top: 140px;
     right: 140px;
+    animation:imgs 0.7s linear infinite alternate;
 }
 
 .sec-1img17 {
     top: 290px;
     right: 55px;
+    animation:imgs 0.9s linear infinite alternate;
 }
 
 .sec-1img18 {
     top: 357px;
     right: 320px;
+    animation:imgs 0.5s linear infinite alternate;
 }
 
 .sec-1img19 {
     top: 140px;
     left: 144px;
+    animation:imgs 1.7s linear infinite alternate;
 }
 
 .sec-1img20 {
     top: 297px;
     left: 60px;
+    animation:imgs 1.5s linear infinite alternate;
 }
 
 .sec-1img21 {
     top: 60px;
     left: 60px;
+    animation:imgs 1.6s linear infinite alternate;
 }
 
 .sec-1img22 {
     top: 125px;
     right: -11px;
+    animation:imgs 1.6s linear infinite alternate;
 }
 
 .sec-1img23 {
     top: 0px;
     left: 230px;
+    animation:imgs 1.6s linear infinite alternate;
 }
 
 .sec-1img24 {
     top: 250px;
     right: -11px;
+    animation:imgs 1.6s linear infinite alternate;
 }
 @keyframes imgs{
-    from{
-        transform: translate3d(0,0,0);
+    /* from{
+        transform: translate3d();
         
-    }
+    } */
      to{
         transform: translate3d(0,20px,20px);
         
