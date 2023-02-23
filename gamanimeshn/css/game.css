@@ -18,13 +18,32 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.678);
 }
 .header {
     display: flex;
     align-items: center;
-    color: #f00;
+    color: wheat;
     font-size: 30px;
+    text-transform: uppercase;
+}
+.header2{
+    align-items: center; 
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.header2 input{
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.header2 i{
+    padding: 5px 5px;
+}
+.header p::first-letter{
+    color: #f00;
+    
 }
 header img{
     width: 100px;
@@ -79,11 +98,11 @@ header i{
 .imgScroll div{
     display: flex;
     animation: animate 40s linear infinite;
-    animation-delay: -40px;
+    animation-delay: -10px;
 }
 .imgScroll div:nth-child(2){
     animation: animate2 40s linear infinite;
-    animation-delay: -20px;
+    animation-delay: -10px;
 }
 .imgScroll:hover div,
 .imgScroll:hover div:nth-child(2){
