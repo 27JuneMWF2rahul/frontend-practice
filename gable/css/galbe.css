@@ -37,6 +37,13 @@ nav ul li{
 .header_1{
     background-color: red;
 }
+.pos-fx{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: aliceblue;
+}
 .headerbg{
     background-image: url(../img/header-bg.png);
     background-size: cover;
@@ -118,7 +125,41 @@ nav ul li{
 }
 
 
-/* ----sec-4---- */
-.sec-4bg{
-    ba
+/* ----sec-4-- */
+.sec-4{
+    background-color: black;
+    color: aliceblue;
+    padding: 40px;
 }
+ .sec-4img img{
+    width: 100%;
+ }
+ .sec4-text{ 
+    width: 80%;
+    margin-left: auto;
+ }
+ .sec4-text h2{
+    font-size: 30px;
+    margin: 10px 0;
+ }
+ .sec4-text input{
+    font-size: 18px;
+     padding: 10px 0;
+     margin: 4px 10px 10px 0px;   
+ }
+ .sec4-text button{
+    background: red;
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px 30px;
+ }
+ .footer img{
+    width: 100%;
+ }
+ .col-25{
+    width: 25%;
+ }
+ .col-10{
+    width: 10%;
+ }

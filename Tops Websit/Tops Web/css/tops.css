@@ -428,8 +428,8 @@ nav ul li a {
         transform: translate3d();
         
     } */
-     to{
-        transform: translate3d(0,20px,20px);
+     from{
+        transform: scaleY(1)
         
     }
 }
