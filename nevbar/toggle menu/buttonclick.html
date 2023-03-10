@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .add {
+            padding: 10px 20px;
+            transition: all ease-in-out 1s;
+        }
+
+        .active {
+            color: white;
+            background-color: red;
+            border-radius: 50%;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <button class="add" id="bttonClick" onclick="myfunction()">Hello</button>
+    <script>
+        let bttonClick = document.getElementById("bttonClick")
+        function myfunction() {
+            if (bttonClick.attributes.class.value.includes("active")) {
+                bttonClick.classList.remove("active")
+            }
+            else {
+                bttonClick.classList.add("active")
+            }
+        };
+    </script>
+</body>
+
+</html>

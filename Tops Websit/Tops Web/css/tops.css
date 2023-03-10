@@ -270,6 +270,7 @@ nav ul li a {
     
     
 }
+
 .sec-img img:hover{
     transform: scale(1.5)
 
@@ -1025,6 +1026,9 @@ nav ul li a {
     .container {
         width: 100%;
     }
+    .sec-img {
+        display: none;
+    }
 
     nav ul {
         border-radius: 0;
@@ -1055,10 +1059,10 @@ nav ul li a {
     }
 
     .box {
-        padding: 28px 20px 28px 51px;
+        padding:30px;
         /* border: 1px solid white; */
-        border-radius: 22px 0px;
-        margin: 20px 24px;
+        border-radius: 12px;
+        /* margin: 20px 24px; */
     }
 
     .sec2-img img {
