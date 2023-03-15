@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="title">
+      Registration Form
+    </div>
+   <form action="https://www.google.com/">
+    <div class="form">
+      <div class="inputfield">
+        <label>Username</label>
+        <input type="text" name="username" id="username" class="input form-control" placeholder="First Name"> <br>
+        <i class="fa" aria-hidden="true"></i>
+        <span></span>
+      </div>
+
+
+      <div class="inputfield">
+        <label>Last Name</label>
+        <input type="text" class="form-control input" id="lastName" placeholder="Last Name">
+        <i class="fa" aria-hidden="true"></i>
+        <span></span>
+      </div>
+
+      <div class="inputfield">
+        <label>Email Address</label>
+        <input type="email" class="form-control input" id="email" placeholder="Email">
+        <i class="fa" aria-hidden="true"></i>
+        <span></span>
+      </div>
+
+      <div class="inputfield">
+        <label>Phone Number</label>
+        <input type="tel" maxlength="10" id="phone" onkeypress="return(event.which >=48 && event.which <=57)"
+          class="input form-control" placeholder="Mobile Number">
+        <i class="fa" aria-hidden="true"></i>
+        <span></span>
+      </div>
+
+      <div class="inputfield">
+        <label>Date oF Birth</label>
+        <input type="date" class="input form-control" id="Bday">
+        <i class="fa" aria-hidden="true"></i>
+        <span></span>
+      </div>
+
+      <div class="inputfield">
+        <label>Gender</label>
+        <div class="custom_select" id="custom_select">
+          <select id="gender" required>
+            <option value="">Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="female">Others</option>
+          </select>
+      </div>
+    </div>
+      <!-- <i class="fa" aria-hidden="true"></i>
+        <span></span> -->
+      
+      <div class="inputfield">
+        <label>City</label>
+        <div class="custom_select" id="city">
+          <select required>
+            <option value="">Select</option>
+            <option value="1">India</option>
+            <option value="2">America</option>
+            <option value="3">Nepal</option>
+          </select>
+        </div>
+        <i class="fa" aria-hidden="true"></i>
+        <span></span>
+      </div>
+
+      <div class="inputfield">
+        <label>State</label>
+        <div class="custom_select" id="state">
+          <select nam=""  id="" required>
+            <option value="">State</option>
+            <option value="1">Ahemdabad</option>
+            <option value="2">Surat</option>
+            <option value="3">Aanad</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="inputfield">
+        <label>Address</label>
+        <textarea class="textarea" id="address"></textarea>
+      </div>
+
+      <div class="inputfield">
+        <label>Postal Code</label>
+        <input name="pincode" id="pincode" class="form-control input" type="tel"
+          onkeypress="return(event.which >=48 && event.which <=57)" pattern="[0-6]" placeholder="Pin-code"
+          inputmode="numeric" maxlength="6">
+          <i class="fa" aria-hidden="true"></i>
+        <span></span>
+      </div>
+
+      <div class="inputfield">
+        <label>Qualification</label>
+        <div class="custom_select" id="qualification">
+          <select>
+            <option value="">Qualification</option>
+            <option value="BCA">BCA</option>
+            <option value="MSc">MSc</option>
+            <option value="MPhill">BCOM</option>
+            <option value="MCA">MCA</option>
+            <option value="MBA">MBA</option>
+            <option value="BBA">BBA</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="inputfield">
+        <label>Password</label>
+        <input type="password" id="pass1" class="input">
+        <i class="fa" aria-hidden="true"></i>
+        <span></span>
+      </div>
+      
+      <div class="inputfield">
+        <label>Confirm Password</label>
+        <input type="password" class="input" id="pass2">
+        <i class="fa" aria-hidden="true"></i>
+        <span></span>
+      </div>
+      <!-- <div class="inputfield terms">
+        <label class="check">
+          <input type="checkbox" required>
+          <span class="checkmark"></span>
+        </label>
+        <p>Agreed to terms and conditions</p>
+      </div> -->
+      <div class="inputfield">
+        <input type="submit" id="submit" value="Register" class="btn">
+      </div>
+    </div>
+   </form>
+  </div>
+
+
+  <script>
+    document.getElementById('submit').addEventListener("click", function (e) {
+      event.preventDefault();
+      // alert("hello");
+
+      checkData();
+    });
+
+    var username = document.getElementById("username");
+    var lastName = document.getElementById("lastName");
+    var email = document.getElementById("email");
+    var phone = document.getElementById("phone");
+    var Bday = document.getElementById("Bday");
+    // var gender = document.getElementById("gender");
+    var address = document.getElementById("address");
+    var pincode = document.getElementById("pincode");
+    var pass1 = document.getElementById("pass1");
+    var pass2 = document.getElementById("pass2");
+
+    function checkData() {
+      var usernameValue = username.value.trim();
+      var lastNameValue = lastName.value.trim();
+      var emailValue = email.value.trim();
+      var phoneValue = phone.value.trim();
+      var bdayValue = Bday.value.trim();
+      // var genderValue = gender.value.trim();
+      var addressValue = address.value.trim();
+      var pincodeValue = pincode.value.trim();
+      var pass1Value = pass1.value.trim();
+      var pass2Value = pass2.value.trim();
+      //alert(usernameValue); // data show on input
+      if (usernameValue == "") {
+        setError(username, "username can't be blank");
+      }
+      else {
+        setSuccess(username);
+      }
+      //lastname
+      if (lastNameValue == "") {
+        setError(lastName, "Your Last Name can't be blank");
+      }
+      else {
+        setSuccess(lastName);
+      }
+      //email
+      if (emailValue == "") {
+        setError(email, "Email can't be blank");
+      }
+      else if (!isEmail(emailValue)) {
+        setError(email, "email id not valid");
+      }
+      else {
+        setSuccess(email);
+      }
+
+      // phone
+      if (phoneValue == "") {
+        setError(phone, "Your Number can't be blank");
+      }
+      else {
+        setSuccess(phone);
+      }
+
+      //pass1
+      if (pass1Value == "") {
+        setError(pass1, "Password can't be blank");
+      }
+      else {
+        setSuccess(pass1);
+      }
+
+      //pass2
+      if (pass2Value == "") {
+        setError(pass2, "Password can't be blank");
+      }
+      else if (pass1Value!==pass2Value) {
+        setError(pass2, "password does not match");
+      }
+      else {
+        setSuccess(pass2);
+      }
+
+      //bday
+      if (bdayValue == "") {
+        setError(Bday, "Choose Your Birth Date");
+      }
+      
+      else {
+        setSuccess(Bday);
+      }
+      //gender
+      // if (genderValue == "") {
+      //   setError(gender, "Choose Your Birth Date");
+      // }
+      
+      // else {
+      //   setSuccess(gender);
+      // }
+
+      //address
+      if (addressValue== "") {
+        setError(address, "Enter Your Address Here...");
+      }
+      
+      else {
+        setSuccess(address);
+      }
+
+       //pincode
+       if (pincodeValue== "") {
+        setError(pincode, "Enter Your pincode Here...");
+      }
+      
+      else {
+        setSuccess(pincode);
+      }
+
+      
+    }
+
+    function setError(u, msg) {
+      // console.log(u);
+      // console.log(u.parentElement); //div select
+      var parentBox = u.parentElement;
+      parentBox.className = "inputfield error";
+      var span = parentBox.querySelector("span");
+      var fa = parentBox.querySelector(".fa"); //for icon
+      // console.log(span)
+      span.innerText = msg; //for Error msg
+      fa.className = "fa fa-exclamation-circle"; //for Icon
+    }
+
+    function setSuccess(u) {
+      var parentBox = u.parentElement;
+      parentBox.className = "inputfield success";
+      var fa = parentBox.querySelector(".fa"); //for icon
+      fa.className = "fa fa-check-circle"; //for Icon
+    }
+
+    function isEmail(e) {
+      var pattern = /^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$/;
+      return pattern.test(e)
+    }
+  </script>
+
+</body>
+
+</html>
