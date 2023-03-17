@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>What is The inheritance</h2>
+    <p>=>Inheritance in javascript is used to inherit attributes and methods of a class. Classes are inherited using the
+        extends keyword. The class that is being inherited is known as the parent class, and the class that is
+        inheriting the parent class is known as the child class.</p>
+    <p>ek class ki proptice and methods used in second class</p>
+    <script>
+        class employee {
+            constructor(name, age, salary) {
+                this.empname = name;
+                this.empage = age;
+                this.empsalary = salary;
+                console.log("constructor: Employee" + name);
+            }
+            info() {
+                document.write(`<h2>Employee Class</h3>
+                            Name : ${this.empname} <br> 
+                            Age: ${this.empage}
+                            Salary : ${this.empsalary}   `);
+
+            }
+        }
+
+        class manager extends employee {
+
+            info() {
+                let ta = 1000;
+                let pa = 300;
+                let totalSalary = this.empsalary + ta + pa;
+                document.write(`<h2>maneger Class</h3>
+                            Name : ${this.empname} <br> 
+                            Age: ${this.empage}<br>
+                            Salary : ${totalSalary}   `);
+
+            }
+            // info() {
+            //     super.info();
+            //     console.log(" Employee name :" + this.empname);
+
+            // }
+
+            // constructor(name) {
+            //     super();
+            //     console.log("constructor: Manager " + name);
+            // }
+
+        }
+        let a = new manager("rahul", 21, 2500);
+        let b = new manager("rutvik", 20, 2900);
+        a.info();
+        b.info();
+    </script>
+</body>
+
+</html>
