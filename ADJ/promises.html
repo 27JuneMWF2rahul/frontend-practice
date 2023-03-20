@@ -6,10 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <STYLE>
+
+    </STYLE>
 </head>
 
 <body>
+    <h1>What is the Promise</h1>
+    <p>=> A Promise is a proxy for a value not necessarily known when the promise is created. It allows you to associate
+        handlers with an asynchronous action's eventual success value or failure reason.</p>
+    <img src="javascript-promise.jpg" alt="">
     <script>
         // function prom(a, b) {
         //     return new Promise(function (resolve, reject) {
@@ -30,15 +38,15 @@
         // prom(9, 2).then((result) => { console.log(result); }).catch(onRejection = (error) => {
         //     console.log(error);
         // });
-            // console.log(prom(true));
+        // console.log(prom(true));
 
 
-             function prom() {
+        function prom() {
             return new Promise(function (resolve, reject) {
                 console.log("Fetching data, please wait");
-                
+
                 setTimeout(() => {
-                    $.get("https://jsonplaceholder.typicode.com/posts",function(data){
+                    $.get("https://jsonplaceholder.typicode.com/posts", function (data) {
                         console.log(data);
                     })
                 }, 3000)
