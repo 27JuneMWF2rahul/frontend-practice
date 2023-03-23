@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What is Iterators</h1>
+    <p>=>In JavaScript an iterator is an object which defines a sequence and potentially a return value upon its
+        termination. Specifically, an iterator is any object which implements the Iterator protocol by having a next()
+        method that returns an object with two properties: value.</p>
+
+    <script>
+        // let numbar = [100, 200, 300];
+
+        // let iter = numbar[Symbol.iterator]();
+
+        // iter.next()
+
+        // console.log("hello")
+        // console.log("hello")
+        // console.log("hello")
+        // console.log(iter.next().value)
+        // console.log(iter.next().done)
+
+
+        // let numbar = [100, 200, 300];
+        // let str = "rahulvankar";
+
+
+        // let iter = str[Symbol.iterator]();
+
+        // let result = iter.next();
+        // while (!result.done) {
+        //     console.log(result.value);
+        //     result = iter.next();
+        // }
+
+        // let str = "rahulvankar";
+
+        // for (let char of str) {
+        //     console.log(char);
+        // }
+
+        function numbarIterator(arr) {
+            var nextNumbar = 0;
+            return {
+                next() {
+                    if (nextNumbar < arr.length) {
+
+                        return {
+                            value: arr[nextNumbar++],
+                            done: true
+                        }
+                    } else {
+                        return {
+
+                            done: false
+                        }
+
+                    }
+                }
+            }
+        }
+
+        let numbar = [100, 200, 300, 400, 500];
+
+        let num = numbarIterator(numbar);
+        console.log(num.next().value);
+        console.log(num.next().value);
+        num.next().value;
+        console.log(num.next().value);
+        console.log(num.next().value);
+        console.log(num.next().value);
+
+
+    </script>
+</body>
+
+</html>

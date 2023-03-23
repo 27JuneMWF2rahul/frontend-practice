@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What is Error Handling</h1>
+    <p>=>JavaScript provides error-handling mechanism to catch runtime errors using try-catch-finally block, similar to
+        other languages like Java or C#. Syntax: try { // code that may throw an error } catch(ex) { // code to be
+        executed if an error occurs } finally{ // code to be executed regardless of an error occurs or not }</p>
+
+    <h2>Different type of Errors in JavaScript</h2>
+    <ul>
+        <li>EvalError</li>
+        <li>RangeError</li>
+        <li>SyntaxError</li>
+        <li>TypeError</li>
+        <li>URlError</li>
+        <li>AggregateError</li>
+    </ul>
+    <script>
+
+        // try {
+        //     blabla;
+        // } catch (error) {
+        //     // console.log('Error has occurd')
+        //     // console.log(error.name)
+        //     // console.log(error.message)
+        //     // console.log(error.stack)
+
+        //     if (error instanceof ReferenceError) {
+        //         console.log('ReferenceError');
+        //     } else if (error instanceof TypeError) {
+        //         console.log('TypeError');
+        //     } else {
+        //         console.log('Unknown Error')
+        //     }
+        // }
+
+
+        try {
+            let json = '{  "age": 30 }';
+            let user = JSON.parse(json);
+
+            if (!user.name) {
+                throw new Error("Incomplete data: no name");
+
+            }
+        } catch (error) {
+            console.log(error);
+        } finally {
+            console.log("Finally");
+        }
+    </script>
+</body>
+
+</html>

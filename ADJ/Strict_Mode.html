@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What is Strict Mode</h1>
+    <p>=>JavaScript's strict mode is a way to opt in to a restricted variant of JavaScript, thereby implicitly
+        opting-out of "sloppy mode". Strict mode isn't just a subset: it intentionally has different semantics</p>
+
+    <script>
+        // a = 10;
+        // console.log(a);
+
+        // function test() {
+        //     "use strict";
+        //     b = 20;
+        // }
+        // test();
+
+        "use strict"
+
+        function test(a, b, c) {
+            // let b = 20;
+            console.log(a + b + c);
+        }
+        test(10, 20, 30);
+    </script>
+</body>
+
+</html>

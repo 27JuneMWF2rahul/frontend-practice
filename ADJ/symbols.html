@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What is the symbol in javascript</h1>
+    <p>=>Symbol is a built-in object whose constructor returns a symbol primitive — also called a Symbol value or just a
+        Symbol — that's guaranteed to be unique.</p>
+    <script>
+        // var r = Symbol("hello")
+        // var p = Symbol("hello")
+
+        // console.log(r)
+        // console.log(typeof (r));
+        // console.log(r == p);
+        // // alert(r)
+        // // alert(r.toString())
+        // console.log(r.description);
+
+
+        let age = Symbol("age");
+        let user = {
+            name: "rahul",
+            class: "Btech",
+            // [age]: 25
+        };
+        user[age] = 25;
+        user["gender"] = "male";
+
+        console.log(user)
+        console.log(user.class)
+        console.log(user[age])
+
+        // for (let key in user) {
+        //     console.log(key)
+
+        // }
+
+        console.log(JSON.stringify(user))
+    </script>
+</body>
+
+</html>

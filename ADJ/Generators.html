@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>what is a Generators</h1>
+    <p>A generator is a process that can be paused and resumed and can yield multiple values. A generator in JavaScript
+        consists of a generator function, which returns an iterable Generator object.</p>
+    <script>
+        // function* generateit() {
+        //     let yArray = [yield, yield, yield];
+
+        //     console.log(`Result : ${yArray[2]}`)
+
+        // }
+        // let g = generateit();
+        // g.next();
+        // g.next("PHP");
+        // g.next("JAVA");
+        // g.next("Python");
+        // g.next(800);
+
+        // console.log(g.next().value)
+        // console.log(g.next().value)
+        // console.log(g.next().value)
+        // console.log(g.next().value)
+        // console.log(g.next().value)
+        // console.log(g.next().value)
+
+
+        // for (let value of g) {
+        //     if (value > 309) break;
+        //     document.write(value + "<br>");
+        // }
+        // g.next();
+        // console.log(g.next().value);
+
+        function* generateit() {
+            yield "PHP";
+            yield 'Node';
+            yield 'Angular';
+            yield 'React';
+        }
+        let g = generateit();
+        console.log(g.next().value);
+        console.log(g.return("THIS IS END"));
+        console.log(g.next().value);
+        // console.log([...g]);
+
+
+
+    </script>
+</body>
+
+</html>
