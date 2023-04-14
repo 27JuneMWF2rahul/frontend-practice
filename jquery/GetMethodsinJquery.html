@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Methods in JQury</title>
+    <style>
+        #box {
+            border: 2px solid;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Get Methods</h2>
+    <ul>
+        <li>text</li>
+        <li>html</li>
+        <li>attr</li>
+        <li>val</li>
+    </ul>
+
+    <h1>Rahul vankar</h1>
+    <div id="box" class="test">
+        <h1>Test Box</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, cumque.</p>
+    </div>
+    <fieldset>
+
+        <form action="" id="sform">
+            <label for="">Name</label><input type="text" id="sname"><br>
+            <label for="">Class</label><input type="text" id="sclass"><br>
+
+            <label for="">Country</label>
+            <select name="" id="scountry">
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Nepal">Nepal</option>
+            </select>
+            <br><br>
+            <input type="submit">
+        </form>
+    </fieldset>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            // var a = $('#box ').attr('class');
+            // console.log(a);
+            $('#sform').submit(function () {
+                var name = $('#sname').val();
+                var className = $('#sclass').val();
+                var country = $('#scountry').val();
+                alert("Hellow " + name + " class : " + className + " country :" + country)
+            })
+        });
+    </script>
+</body>
+
+</html>

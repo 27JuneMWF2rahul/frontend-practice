@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mouse Event</title>
 </head>
+<style>
+    #box {
+        border: 2px solid;
+        background-color: antiquewhite;
+        text-align: center;
+    }
+</style>
 
 <body>
     <h2>Mouse Event</h2>
@@ -19,11 +26,32 @@
     </ul>
     <h1>Rahul vankar</h1>
     <div id="box" class="test">
-        <h1>test Box</h1>
+        <h1>Test Box</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, cumque.</p>
     </div>
-    <script src="jquery-3.6.4.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#box').click(function () {
+                $('#box').css('background-color', 'red');
+                // var a = $('#box').html();
+                // console.log(a)
+            });
+            $('#box').dblclick(function () {
+                $('#box').css('background-color', 'orange');
+            });
+            $('#box').contextmenu(function () {
+                $('#box').css('background-color', 'blue');
+            });
+            $('#box').mouseenter(function () {
+                $('#box').css('background-color', 'yellow');
+            });
+            $('#box').mouseleave(function () {
+                $('#box').css('background-color', 'tan');
+            });
+        })
+    </script>
 </body>
 
 </html>

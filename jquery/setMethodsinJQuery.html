@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>set Methods</title>
+    <style>
+        #box {
+            border: 2px solid;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+
+        .red {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Set Methods</h2>
+    <ul>
+        <li>test</li>
+        <li>html</li>
+        <li>attr</li>
+        <li>val</li>
+    </ul>
+
+    <!-- <h2>JQury Set Methods</h2> -->
+    <div id="box" class="test">
+        <h1>Test Box</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, cumque.</p>
+    </div>
+    <br>
+    <button id="clickbutton">Set Value</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#clickbutton').click(function () {
+                $('#box h1').text("hellow rahul")
+                $('#box p').html("this is <b>the new</b> text")
+
+                $('#box h1').attr("class", "red")
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Events</title>
+    <style>
+        #box {
+            width: 70%;
+            height: 200px;
+            background: thistle;
+            padding: 10px;
+            border: 1px solid #000;
+            overflow: auto;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Window Events</h2>
+    <ul>
+        <li>load</li>
+        <li>unload</li>
+        <li>resize</li>
+        <li>scroll</li>
+    </ul>
+
+
+    <h1>JQury Window Events</h1>
+
+    <p id="box">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis culpa eius, quasi unde ab nihil
+        reiciendis recusandae itaque amet libero sint voluptatibus illo blanditiis incidunt deleniti sunt sed id
+        veritatis.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam, enim commodi. Reiciendis sapiente unde id
+        excepturi sequi itaque, rem eaque, at vitae earum quod harum praesentium perferendis porro, numquam libero
+        cumque. Qui laudantium quisquam nam atque a accusantium commodi doloribus. Debitis cumque consectetur animi
+        reiciendis ipsa eius iste dolor voluptate fuga, odio alias exercitationem sequi et error rem atque, asperiores
+        placeat quas enim, rerum hic est dolores quibusdam! Sequi eius nostrum in libero unde beatae, corporis dolorem
+        nesciunt similique numquam incidunt vitae. Similique debitis ex maiores accusantium quia tempora! Esse officiis,
+        quibusdam beatae provident officia, eveniet optio eos a soluta eligendi tenetur! Dignissimos sit itaque totam
+        cupiditate consequuntur rem distinctio maiores ducimus, praesentium non deleniti recusandae commodi. Voluptate
+        placeat soluta vitae voluptatum quo officia, repudiandae sit eveniet velit dolores reiciendis maxime amet
+        eligendi officiis vel ratione accusantium eius unde provident. Dolor nesciunt eius, iusto, aspernatur adipisci
+        odio pariatur quia sequi nostrum alias et praesentium ipsam cum sapiente odit? Accusantium ad a obcaecati
+        asperiores dolorem rem nemo modi placeat. Placeat voluptatum eos quos perferendis cumque, nemo, reprehenderit
+        deserunt cupiditate obcaecati at eum eius omnis corrupti id itaque nobis ratione distinctio. Tempora at qui
+        magnam nemo cum aperiam voluptatum, corporis vero eligendi quas perferendis tempore harum corrupti delectus amet
+        cupiditate dicta laboriosam obcaecati, ducimus totam numquam dolorem maxime? Dolores, itaque aliquid alias
+        numquam quidem magni ab cum officiis debitis magnam delectus, voluptates labore! Beatae reprehenderit accusamus
+        voluptates, laudantium tempore nisi voluptatem quasi temporibus numquam vero quaerat optio dolore nulla, ullam
+        iusto, quisquam quas exercitationem magnam deserunt in aspernatur odit? Laudantium fugiat inventore natus
+        voluptatem aliquid soluta ipsam, alias nam maiores dolores commodi eius harum obcaecati sed? Porro minus itaque
+        error quaerat eaque! Nulla cum ducimus sint repellendus, optio sit ipsam delectus ratione accusamus mollitia!
+        Debitis, enim exercitationem optio modi culpa perspiciatis corporis.</p>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            // $(window).scroll(function () {
+            //     console.log("you are scrolling")
+            // });
+            $('#box').scroll(function () {
+                console.log("you are scrolling")
+            });
+            $(window).resize(function () {
+                console.log("you are resize")
+            });
+
+        });
+    </script>
+</body>
+
+</html>

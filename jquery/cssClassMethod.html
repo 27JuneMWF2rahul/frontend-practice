@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class Method</title>
+    <style>
+    
+
+        #box {
+            padding: 10px;
+            border: 2px solid #000;
+
+        }
+
+        .first {
+            background: tan;
+            width: 80%;
+        }
+
+        .second {
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>css Class method</h2>
+    <ul>
+        <li>addClass</li>
+        <li>removeClass</li>
+        <li>toggleClass</li>
+    </ul>
+    <div id="box">
+        <h2>Text box</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quae ipsam beatae id in voluptatibus eos
+            laborum, possimus at numquam reprehenderit repudiandae voluptate tenetur aspernatur praesentium quidem odio
+            aperiam! Natus.</p>
+    </div>
+    <br>
+    <button id="addbutton">Add Class</button>
+    <button id="removebutton">Remove Button</button>
+    <button id="togglebutton">Toggle class</button>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $('#addbutton').click(function () {
+            $('#box').addClass("first")
+        })
+        $('#removebutton').click(function () {
+            $('#box').removeClass("first")
+        })
+        $('#togglebutton').click(function () {
+            $('#box').toggleClass("first")
+        })
+    </script>
+</body>
+
+</html>

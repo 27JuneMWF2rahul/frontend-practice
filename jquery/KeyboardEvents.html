@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard_Events</title>
+    <style>
+        #box {
+            border: 2px solid;
+            background-color: antiquewhite;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Keyboard Events</h1>
+    <ul>
+        <li>Keypress</li>
+        <li>Keydown</li>
+        <li>Keyup</li>
+    </ul>
+
+
+    <h1>Rahul vankar</h1>
+    <div id="box" class="test">
+        <h1>Test Box</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, cumque.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('body').keypress(function () {
+                $(this).css('background-color', 'orange')
+            });
+            $('body').keydown(function () {
+                $(this).css('background-color', 'green')
+            });
+            $('body').keyup(function () {
+                $(this).css('background-color', 'red')
+            });
+        });
+    </script>
+</body>
+
+</html>

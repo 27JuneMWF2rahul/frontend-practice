@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form_Events</title>
+</head>
+
+<body>
+    <h2>Form Events</h2>
+    <ul>
+        <li>focuse</li>
+        <li>blur</li>
+        <li>Change</li>
+        <li>Select</li>
+        <li>Submit</li>
+    </ul>
+
+    <fieldset>
+
+        <form action="" id="sform">
+            <label for="">Name</label><input type="text" id="sname"><br>
+            <label for="">Class</label><input type="text" id="sclass"><br>
+
+            <label for="">Country</label>
+            <select name="" id="scountry">
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                <option value="Bangladesh">Bangladesh</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Nepal">Nepal</option>
+            </select>
+            <br><br>
+            <input type="submit">
+        </form>
+    </fieldset>
+    <div id="test" style="border:1px solid red;margin-top: 20px;"></div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#sname,#sclass,#scountry').focus(function () {
+                $(this).css('background-color', 'lime')
+            });
+            $('#sname,#sclass,#scountry').blur(function () {
+                $(this).css('background-color', '')
+            });
+            $('#scountry').change(function () {
+                // $(this).css('background-color', 'red')
+                var a = $(this).val();
+                $('#test').html(a);
+            });
+            $('#sname').change(function () {
+                // $(this).css('background-color', 'red')
+                var a = $(this).val();
+                $('#test').html(a);
+            });
+            $('#sclass').change(function () {
+                // $(this).css('background-color', 'red')
+                var a = $(this).val();
+                $('#test').html(a);
+            });
+            $('#sname,#sclass').select(function () {
+                $(this).css('background-color', 'yellow');
+            });
+            $('#sform').submit(function () {
+                alert("Form Submitted")
+            });
+        });
+    </script>
+</body>
+
+</html>
