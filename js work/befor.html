@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .menu {
+            width: 300px;
+            height: 300px;
+            border: 2px solid;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .conatainer {
+            display: flex;
+            position: absolute;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .box3 {
+            position: relative;
+            bottom: 0;
+            width: 100px;
+            height: 200px;
+            margin: 10px 20px;
+            /* background-color: blueviolet; */
+        }
+
+
+
+         .box2 {
+
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 100%;
+            background-color: rgba(165, 42, 42, 0.351);
+            transition: all 2s ease;
+        }
+
+        .box3 {
+            height: 300px;
+            width: 300px;
+            border: 2px solid;
+        }
+
+        .menu:hover .box2 {
+            top: 0%;
+        } 
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+
+        <div class="box">
+            <img src="https://images.unsplash.com/photo-1465488867967-ffb57e7f0a89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW9ybmluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+        </div>
+        <div class="box2">
+            <h2>hellow my frind 
+                
+            </h2>
+        </div>
+    </div>
+    <div class="conatainer">
+        <div class="box3">
+            <img src="https://images.unsplash.com/photo-1465488867967-ffb57e7f0a89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW9ybmluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+        </div>
+        <div class="box3">
+            <img src="https://images.unsplash.com/photo-1465488867967-ffb57e7f0a89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW9ybmluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+        </div>
+        <div class="box3">
+            <img src="https://images.unsplash.com/photo-1465488867967-ffb57e7f0a89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bW9ybmluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt="">
+        </div>
+    </div>
+</body>
+
+</html>

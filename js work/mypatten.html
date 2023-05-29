@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>javaScript Patten</h1>
+    <script>
+        // document.write("<h2>paraid</h2><br>")
+        // for (let i = 0; i < 6; i++) {
+        //     let line = "";
+        //     for (let j = -1; j < i; j++) {
+
+        //         line += " * ";
+        //     }
+        //     document.write("<br>");
+        //     document.write(line);
+        //     // document.write(i);
+        //     // document.write("<br>")
+        // }
+
+        // for(var a = 1; a <= 10; a++){
+        //     // document.write("<br>")
+        //     // document.write(a + "<br>")
+
+
+        //      for(var b = a; b < a+10; b++){
+        //          document.write(b + " ");
+        //      }
+
+        //      document.write("<br>")
+        // }
+
+        document.write("Example of Nested loop");
+        document.write("<br>")
+        for (let a = 1; a < 10; a++) {
+            // document.write("&nbsp;")
+            for (let b = 1; b <= a; b++) {
+                document.write( b + " ");
+            }
+            document.write(a + "<br>");
+        }
+
+        document.write("<br>")
+        for (let x = 0; x < 10; x++) {
+            // document.write("&nbsp;")
+            let r = "*"
+            for (let y = 1; y <= x; y++) {
+                document.write( x + " ");
+            }
+            document.write(x + "<br>");
+        }
+        document.write("<br>")
+
+
+        for (let c = 10; c >= 0; c--) {
+
+            let r = "*"
+            
+            for (let d = c; d >= 1; d--) {
+                // document.write( d + " ");
+                r += " * ";
+            }
+            for (var j = 1; j < 10 - c; j++) {
+                document.write("&nbsp;&nbsp;");
+            }
+             
+            document.write( "<br>");
+            document.write(r);
+        }
+        document.write("<br>")
+
+        for (let ab = 10; ab >= 0; ab--) {
+            let rp = "*"
+            for (var ba = 1; ba <= 10 - ab; ba++) {
+                document.write("&nbsp;&nbsp;");
+                document.write(rp);
+            }
+             
+            document.write( "<br>");
+            document.write(rp);
+        }
+        document.write("<br>")
+
+
+        for (var i = 0; i < 6; i++) {
+            {
+                for (var j = 5; j > 5 - i; j--) {
+                    document.write("&nbsp")
+                }
+                for (var k = 5; k >= i; k--) {
+                    document.write(" * ")
+                }
+            }
+            // document.write(i)
+            document.write("<br>")
+        }
+
+    </script>
+</body>
+
+</html>

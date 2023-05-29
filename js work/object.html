@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Object</h2>
+
+    <script>
+        var a = {
+            fname: 'rahul',
+            lname: 'vankar',
+            age: 20,
+            email: "vankrrahul2710@gmail.com",
+            favMovies: ['Dhoom', 'sholy', 'Hum'],
+            living: {
+                'city': 'khedbhma',
+                'country': 'India'
+            },
+            salary: function () {
+                return 2500;
+            },
+            fullname: function () {
+                return this.fname + " " + this.lname;
+            }
+        }
+        console.log(a);
+        console.log(a.favMovies[2]);
+        console.log(a.salary());
+        console.log(a.fullname());
+        document.write(a.living.city);
+
+        document.write("<br> <br> <br>")
+
+
+        // creating an object : Method 
+
+        var person = new Object();
+
+        person.firstName = 'Ram';
+        person.lastName = 'Kumar';
+        person.age = 25;
+
+        console.log(person)
+        document.write(person.firstName)
+        document.write(person['age'])
+        document.write("<br><br><br>")
+
+        // Arry of object
+
+        var student = [
+            { name: 'Ram', age: 15 },
+            { name: 'karan', age: 25 },
+            { name: 'Rahul', age: 18 },
+        ];
+
+        console.log(student);
+        for (var a = 0; a < student.length; a++) {
+            document.write(student[a].name + " " + student[a].age + "<bar>")
+        };
+
+
+        //Const Variable with Array & Object
+        const d = [10, 20, 30];
+        // a = 30;
+
+        d[1] = 25;
+
+        console.log(d);
+
+        const r = {
+            name: "Rame",
+            age: 20
+        };
+        r.name = "Rahul";
+        r.age = 55;
+        // r = {
+        //     name : "vankar",
+        //     age :22
+        // }
+
+        console.log(r)
+
+        document.write("<br><br>")
+        // for in loops
+
+        var rp = {
+            firstName: "rahul",
+            lastname: "Kumar",
+            age: 19,
+            country: "india",
+            email: "rahul2710@gmail.com"
+        }
+
+        for (var rahul in rp) {
+            document.write(rahul + " : " + rp[rahul] + "<br>")
+        }
+
+        // Array Map function
+       
+        var ary = [
+            {fname : "meet" , lname : "parmar"},
+            {fname : "kush" , lname : "upadhy"},
+            {fname : "remo" , lname : "divan"},
+        ];
+
+        var y = ary.map(test);
+       document.write(y);
+
+        function test(x){
+            return x.fname + " " + x.lname + "<br>";
+        }
+
+    </script>
+</body>
+
+</html>
