@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list add</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #153677, #4e085f);
+            padding: 10px;
+        }
+
+        .todo-app {
+            width: 100%;
+            max-width: 540px;
+            background: #fff;
+            margin: 100px auto;
+            padding: 30px 60px;
+            border-radius: 10px;
+        }
+
+        .todo-app h2 {
+            color: #002765;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #edeef0;
+            border-radius: 30px;
+            padding-left: 20px;
+        }
+
+        input {
+            flex: 1;
+            border: none;
+            outline: none;
+            background: transparent;
+            padding: 10px;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            padding: 16px 30px;
+            background: #ff5945;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 40px;
+        }
+
+        ul li {
+            list-style: none;
+            font-size: 17px;
+            padding: 12px 8px 12px 50px;
+            user-select: none;
+            cursor: pointer;
+            position: relative;
+        }
+
+        ul li::before {
+            content: '';
+            position: absolute;
+            height: 25px;
+            left: 8px;
+            top: 10px;
+            width: 25px;
+            border: 2px solid;
+            border-radius: 50%;
+
+            background-image: url(data:image/png;base64,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);
+            background-size: cover;
+            background-position: center;
+        }
+
+        ul li.checked {
+            color: #555;
+            text-decoration: line-through;
+        }
+
+        ul li.checked::before {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs7-F6iWVIbrx98ES_4RSCgL8Nem95lPsIxA&usqp=CAU);
+
+        }
+
+        ul li span {
+            position: absolute;
+            right: 0;
+            top: 5px;
+            width: 40px;
+            height: 40px;
+            font-size: 22px;
+            color: #555;
+            line-height: 40px;
+            text-align: center;
+            border-radius: 50%;
+        }
+
+        ul li span:hover {
+            background: #edeef0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2>To-do list</h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Add your text">
+                <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="checked">Task 1</li>
+              <li>Task 2</li>
+              <li>Task 3</li> -->
+            </ul>
+        </div>
+    </div>
+    <script>
+        const inputBox = document.getElementById("input-box");
+        const listContainer = document.getElementById("list-container");
+
+        function addTask() {
+            if (inputBox.value === '') {
+                alert("you must write something");
+            }
+            else {
+                let li = document.createElement("li");
+                li.innerHTML = inputBox.value;
+                listContainer.appendChild(li);
+                let span = document.createElement("span");
+                span.innerHTML = "\u00d7";
+                li.appendChild(span)
+            }
+            inputBox.value = '';
+        }
+        listContainer.addEventListener("click", function (e) {
+            if (e.target.tagName === "LI") {
+                e.target.classList.toggle("checked");
+            }
+            else if (e.target.tagName === "SPAN") {
+                e.target.parentElement.remove();
+            }
+        });
+    </script>
+</body>
+
+</html>
