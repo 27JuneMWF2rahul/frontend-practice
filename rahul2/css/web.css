@@ -8,7 +8,7 @@
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/sec-1bg.jpeg);
-    clip-path: polygon(100% 0, 100% 63%, 48% 100%, 0 65%, 0 0);
+    /* clip-path: polygon(100% 0, 100% 63%, 48% 100%, 0 65%, 0 0); */
     background-position: center;
     background-size: cover;
     position: relative;
