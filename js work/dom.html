@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom in javaScript</title>.
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            background-color: brown;
+            text-align: center;
+            padding: 30px;
+            border: 1px solid;
+        }
+
+        nav {
+            border: 1px solid;
+            background-color: cadetblue;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            padding: 10px;
+        }
+
+        nav ul li a {
+            color: white;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .col_70 {
+            width: 70%;
+            border: 1px solid;
+            padding: 30px;
+            text-align: justify;
+        }
+
+        .col_30 {
+            width: 30%;
+            border: 1px solid;
+            padding: 30px;
+            background-color: azure;
+        }
+
+        footer {
+            background-color: crimson;
+            border: 1px solid;
+            text-align: end;
+        }
+
+        footer h2 {
+            font-weight: 100;
+
+        }
+
+        @media screen and (max-width:568px) {
+            .col_70 {
+                width: 100%;
+            }
+
+            .col_30 {
+                width: 100%;
+            }
+
+            footer {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 id="header" class="header2">This is header</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About US</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Contact US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row" onblur="Blure()">
+
+                <div class="col_70">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus tempora enim nam nobis natus
+                        consequuntur autem! Molestias soluta dolore reprehenderit, praesentium quibusdam cum non, magnam
+                        sapiente, odio nunquam facilis reiciendis deserunt inure venial quid's veritas enid militia
+                        rem aliquant eos ut! Modi, aliquant repudiate molesting expedia architects repellant repellent's
+                        dolores dignissimos eligendi, laudantium sunt nisi dicta accusamus provident. Optio modi, illum
+                        ipsam aspernatur ipsum libero architecto perspiciatis aliquid laudantium repellat ab quidem quia
+                        dolores quis vel a inventore maiores vero consectetur molestias dolore illo molestiae doloribus.
+                        Officia, id aperiam consectetur magni quasi dignissimos autem dolores minima. Quam iusto rem
+                        atque.</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, cum.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, cum.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, cum.</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, cum.</li>
+                    </ul>
+                </div>
+                <div class="col_30">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About US</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Contact US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h2 class="header2">vankarrahul@gmail.com</h2>
+    </footer>
+    <p id="rendam"></p>
+
+    <script>
+        // var element;
+
+        // element = document.links[2];
+        // element = document.getElementById('header').attributes[1].value;
+        // element = document.getElementById('header').innerHTML = 'My name is Rahul';
+        // element = document.querySelector('.header2').innerHTML = '<h1>Hellow my frids</h1>';
+        // element = document.querySelectorAll('.header2').innerHTML = '<h1>Hellow my frids</h1>';
+
+
+        // console.log(element);
+
+
+        // document.getElementById("header").addEventListener('click', function () {
+        //     this.add.style.background = 'yellow';
+        // });
+
+        // document.body.style.background = 'red'; // make the background red
+
+        // setTimeout(() => document.body.style.background = 'yellow', 3000); // return back
+        // setTimeout(() => document.body.style.background = 'blue', 5000); // return back
+        // setTimeout(() => document.body.style.background = 'gray', 8000); // return back
+
+        // const d = new Date().getDate()
+        // const d = new Date().getFullYear()
+        // const d = new Date().getMonth()
+        // const d = new Date().getTime();
+        // const d = new Date().getHours();
+        // const r = new Date().getMinutes();
+        // const s = new Date().getSeconds();
+        // const t = new Date().getTime();
+        // console.log(d);
+        // console.log(r);
+        // console.log(s);
+        // console.log(t);
+        // document.getElementById("rendam").innerHTML =Math.floor( Math.random() * 10)+9;
+
+        // var rahul = document.getElementById("header");
+        // var y = document.getElementById("header").style.backgroundColor = 'yellow'
+        // rahul.innerHTML = y;
+
+        //    var r = document.getElementById("rendam").parentElement;
+
+        
+ 
+
+        console.log(r);
+    </script>
+</body>
+
+</html>
