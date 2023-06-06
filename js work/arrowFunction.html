@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow function</title>
+</head>
+
+<body>
+    <h2>Arrow function</h2>
+
+    <script>
+        //normal function
+        //     let welcome = function (name){
+        //         return `Hellow & Wlcome ${name}`;
+        //     }
+        //    console.log(welcome("Rahul"));
+
+
+        //  arrow function
+
+        //     let welcome =  (name, age) => {
+        //         return `Hellow & Wlcome ${name} - ${age}`;
+        //     }
+        //    console.log(welcome("Rahul",20));
+
+
+
+        // single line code in function
+
+        // let welcome = (name, age) => `Hellow & Wlcome ${name} - ${age}`;
+        // console.log(welcome("Rahul", 20));
+        // console.log(typeof welcome)
+
+        // only one numbers of parameters
+        let welcome = name => `Hellow & Wlcome ${name} `;
+        console.log(welcome("Rahul", 20));
+        console.log(typeof welcome)
+    </script>
+</body>
+
+</html>

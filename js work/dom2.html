@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dom2</title>
     <style>
-        .container{
+        .container {
             width: 90%;
             margin: 0 auto;
-            padding: 40px 0; 
+            padding: 40px 0;
             border: 1px solid;
         }
-        .row{
+
+        .row {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
-        .col-20{
+
+        .col-20 {
             width: 15%;
             height: 200px;
             border: 1px solid;
@@ -26,18 +29,32 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container" id="outer">
         <div class="row " id="inner">
             <div class="col-20">1</div>
             <div class="col-20">1</div>
-            <div class="col-20">1</div>
-            <div class="col-20" id="Child-C">Child - C</div>
+            <div class="col-20" >1</div>
+            <div class="col-20" id="Child-C" >Child - C</div>
             <div class="col-20">1</div>
         </div>
+        <h1>The Element Object</h1>
+        <h2>The insertAdjacentElement() Method</h2>
+
+        <button onclick="myFunction()">Move</button>
+        <button onclick="myFunction2()">Move back</button>
+        <p>Click "Move" to insert the red span after the header.</p>
+
+        <span id="mySpan" style="color:red">My span</span>
+        <h2 id="myH2">My Header</h2>
+        <!-- <button onclick="myFunction()">Move it</button> -->
 
         <div id="text" style="border: 1px solid;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis voluptates expedita inventore sed, voluptatibus quia aliquid modi odio veniam tempora quae excepturi numquam eligendi atque cumque obcaecati explicabo, dolor esse nulla necessitatibus placeat odit eum! Sapiente blanditiis quidem id hic, incidunt vel, harum ipsa laborum repellat amet, consequuntur assumenda?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nobis voluptates expedita inventore sed,
+                voluptatibus quia aliquid modi odio veniam tempora quae excepturi numquam eligendi atque cumque
+                obcaecati explicabo, dolor esse nulla necessitatibus placeat odit eum! Sapiente blanditiis quidem id
+                hic, incidunt vel, harum ipsa laborum repellat amet, consequuntur assumenda?</p>
         </div>
     </div>
     <script>
@@ -45,9 +62,9 @@
         var b = document.getElementById("inner").lastElementChild.style.background = "red";
         // var c = document.getElementById("Child-C").firstChild;
         // var c = document.getElementById("Child-C").lastChild;
-        
+
         // console.log(a)
-        
+
         // var a = document.getElementById("Child-C").nextElementSibling.style.background = 'red';
         // var b = document.getElementById("Child-C").previousElementSibling.style.background = 'red';
         // console.log(a);
@@ -59,9 +76,9 @@
         // console.log(newElement);
         // console.log(newText);
         // console.log(newComment);
-        
+
         // newElement.appendChild(newText);
-        
+
         // document.getElementById("Child-C").appendChild(newElement);
         // document.getElementById("Child-C").appendChild(newComment);
 
@@ -70,13 +87,34 @@
         // var target = document.getElementById("Child-C");
         // target.insertBefore(newElement,target.childNodes[0]);
 
-       var newElement = document.createElement("h2");
-       var newText = document.createTextNode("This is just text");
-       
-       var target = document.getElementById("text");
+        var newElement = document.createElement("h2");
+        var newText = document.createTextNode("This is just text");
 
-       newElement.appendChild(newText);
-       target.insertAdjacentElement("beforebegin" , newElement );
+        var target = document.getElementById("text");
+
+        newElement.appendChild(newText);
+        target.insertAdjacentElement("beforebegin", newElement);
+
+
+        function myFunction() {
+            const span = document.getElementById("mySpan");
+            const h2 = document.getElementById("myH2");
+            h2.insertAdjacentElement("afterend", span);
+        }
+
+        // function myFunction2() {
+        //     const span = document.getElementById("mySpan");
+        //     const h2 = document.getElementById("myH2");
+        //     h2.insertAdjacentElement("beforeend", span);
+        // }
+
+        function myFunction2() {
+            const span = document.getElementById("mySpan");
+            const h2 = document.getElementById("myH2");
+            h2.insertAdjacentElement("beforebegin", span);
+        }
+        
     </script>
 </body>
+
 </html>
