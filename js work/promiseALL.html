@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PromiseALL</title>
+</head>
+
+<body>
+    <h2>PromiseALL</h2>
+    <script>
+        // let p1 = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //       console.log("The first Promise has Resolved");
+        //       resolve(10);
+        //     }, 1 * 1000);
+        // });
+
+        // let p2 = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //       console.log("The second Promise has Faild");
+        //       reject("20");
+        //     }, 2 * 2000);
+        // });
+        // let p3 = new Promise((resolve, reject) => {
+        //     setTimeout(() => {
+        //       console.log("The Third Promise has Resolved");
+        //       resolve(30);
+        //     }, 3 * 3000);
+        // });
+
+        // var total = 0;
+        // Promise.all([p1,p2,p3]).then((result) => {
+        //    for(var i in result){total += result[i]}
+
+        //     console.log(`Results : ${result}`);
+        //     console.log(`Total : ${total}`);
+        // }).catch((error) => {
+        //     console.log(`Error : ${error}`);
+
+        // });
+
+
+
+        let PromiseCall = function (returnData, message) {
+           return function(resolve, reject) {
+                setTimeout(() => {
+                    console.log(`The ${message} Promise has Resolved`);
+                    resolve(returnData);
+                }, returnData * 100);
+            }
+        };
+
+
+
+        let p1 = new Promise(PromiseCall(10, "first"));
+        let p2 = new Promise(PromiseCall(20, "second"));
+        let p3 = new Promise(PromiseCall(30, "Third"));
+        let p4 = new Promise(function(resolve,reject){
+            reject("This 4th Promise has reject")
+        });
+        var total = 0;
+        Promise.all([p1,p2,p3,p4]).then((result) => {
+            for (var i in result) { total += result[i] }
+
+            console.log(`Results : ${result}`);
+            console.log(`Total : ${total}`);
+        }).catch((error) => {
+            console.log(`Error : ${error}`);
+
+        });
+
+
+
+    </script>
+</body>
+
+</html>

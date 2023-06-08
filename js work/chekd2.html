@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+        }
+       #toggle:not(:checked)~ul{
+        background-color: brown;
+       }
+       #toggle:checked~ul{
+        background-color: aqua;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <input type="checkbox" id="toggle">
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+        </ul>
+        <label for="toggle">rahul</label>
+    </div>
+</body>
+
+</html>
