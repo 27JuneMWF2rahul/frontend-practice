@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Async and Await</title>
+    </head>
+    <body>
+        <h2>Async and Await</h2>
+        <script>
+      //    async function test(){
+      //         return "Hello";
+      //     }
+      //     // console.log(test());
+
+      //     test().then((result) => {
+      //         console.log(result)
+      //     });
+
+
+
+      //   let test = async function(){
+      //         return "Hello";
+      //     }
+      //     test().then((result) => {
+      //         console.log(result)
+      //     })
+
+      //   let test = async()=>"Hello";
+      //     test().then((result) => {
+      //         console.log(result)
+      //     })
+
+
+
+    //   async function test() {
+    //     console.log("2 : Massage");
+    //     const Response = await fetch("https://jsonplaceholder.typicode.com/posts");
+    //     const students = await Response.json();
+    //     return students;
+    //   }
+    //   console.log("1 : Massage");
+    //   let a = test();
+    //   console.log("4 : Massage");
+    //   console.log(a);
+
+
+
+//       async function test() {
+//         const Response = await fetch("https://jsonplaceholder.typicode.com/posts");
+//         const students = await Response.json();
+//         return students;
+//       }
+// test().then((res)=>{
+//     console.log(res)
+// }).catch((error)=>{
+//     console.log(error);
+// })
+
+
+
+//       async function test() {
+//         return (await fetch("https://jsonplaceholder.typicode.com/posts")).json();
+//       }
+//     test().then((res)=>{
+//     console.log(res) 
+//    }).catch((error)=>{
+//     console.log(error); 
+//    })
+
+
+
+// try and catch
+      async function test() {
+          try{
+        const Response = await fetch("https://jsonplaceholder.typicode.com/posts");
+        const students = await Response.json();
+        return students;
+        
+    }catch(error){
+        console.log(error);
+    }
+    }
+
+
+test().then((res)=>{
+    console.log(res)
+})
+
+    </script>
+    </body>
+</html>
