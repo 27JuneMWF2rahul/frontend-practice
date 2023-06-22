@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: bisque;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./img/download (1).jpg" alt="">
+    <input type="file" name="" id="">
+    <script>
+        const image = document.querySelector("img");
+        const input = document.querySelector("input");
+
+        input.addEventListener("change", () => {
+            image.src = URL.createObjectURL(input.files[0]);
+        })
+
+        small()
+        function small() {
+            console.log("hello")
+            var r = "rahul"
+            console.log(r)
+        }
+        console.log(r)
+        </script>
+</body>
+
+</html>
