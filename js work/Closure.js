@@ -28,5 +28,4 @@ console.log(store.geSumThree())
 var store1=sum(7, 8, 9);
 
 console.log(store1.geSumTwo())
-console.log(store1
-    .geSumThree())
+console.log(store1.geSumThree())
