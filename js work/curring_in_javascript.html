@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Currying in javascript</h1>
+    <p>What Is Currying in JavaScript? Currying in JavaScript transforms a function with multiple arguments into a nested series of functions, each taking a single argument. Currying helps you avoid passing the same variable multiple times, and it helps you create a higher order function.</p>
+    <script>
+        // Currying Function in javaScript
+
+
+        // function Addition(a,b,c){
+        //     return a+b+c;
+        // }
+        // let res = Addition(2,3,4);
+        // console.log(res);
+
+        // function Addition(a){
+        //     return function(b){
+        //         return function(c){
+        //             return a+b+c;
+        //         }
+        //     }
+        // }
+
+        // let res =Addition(2);
+        // let data =res(4); 
+        // let data1 =data(7); 
+        // console.log(data1);
+        
+        // let res =Addition(2)(4)(7);
+        // console.log(res);
+
+
+        // userObj= {
+        //     name:"rahul",
+        //     age:28 
+        // }
+
+        // function userInfo(obj){
+        //     return function(userInfo){
+        //         return obj[userInfo]
+        //     }
+        // }
+        // let rec =userInfo(userObj);
+        // console.log(rec("age"));
+
+
+
+        //  infinite Currying in javascript
+ 
+        // function add(a){
+        //     return function(b){
+        //         return function(c){
+        //            return function(){
+        //             return a+b+c
+        //            }
+        //         }
+        //     }
+        // }
+        // console.log(add(4)(5)(7)())
+ 
+        function add(a){
+            return function(b){
+                if(b) return add(a+b);
+                return a;
+            }
+        }
+        console.log(add(4)(5)(7)(9)(6)(3)())
+    </script>
+</body>
+</html>
