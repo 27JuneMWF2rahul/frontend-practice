@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACB</title>
+</head>
+
+<body>
+    <h1>Apply Call Bind</h1>
+
+    <p><b>Call</b> is a function that helps you change the context of the invoking function. In layperson's terms, it
+        helps you replace the value of this inside a function with whatever value you want</p>
+
+    <p><b>Apply</b> is very similar to the call function. The only difference is that in apply you can pass an array as
+        an argument</p>
+
+    <p><b> Bind </b> a function that helps you create another function that you can execute later with the new context
+        of this that is provided.</p>
+    <script>
+        // Apply Call Bind in javaScript
+
+        // Problem Statement
+
+        let userDetails = {
+            name: "Rahul Vankar",
+            Age: 21,
+            Designation: "Front and developer",
+        }
+
+        let printDetail = function (state, country) {
+            console.log(this.name + " " + state + " " + country)
+        }
+        printDetail.call(userDetails,"Delhi","india")
+
+
+        let userDetails2 = {
+            name: "Rp Vankar",
+            Age: 19,
+            Designation: "Front and developer",
+        }
+
+        // function borrowing
+        printDetail.call(userDetails2, "Delhi" ,"india")
+        printDetail.apply(userDetails2, ["Delhi","india"])
+
+       let newfun= printDetail.bind(userDetails, "Delhi", "india");
+
+       newfun()
+
+    </script>
+</body>
+
+</html>
