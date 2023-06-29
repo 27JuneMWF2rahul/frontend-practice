@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .todo-input {
+            margin: 30px;
+        }
+
+        .todo-input input {
+            padding: 10px 80px;
+            text-align: center;
+
+        }
+
+        .todo-list {
+            background-color: rgb(69, 59, 59);
+            color: white;
+            width: 33%;
+            margin: 30px;
+
+        }
+
+        .todo-list li {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .todo-list span {
+            margin: 10px;
+            padding: 10px 20px;
+        }
+
+        .btn button {
+            padding: 10px 20px;
+            margin: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="todo-input">
+        <input type="text" id="" name="" placeholder="Add Todo" />
+        <input type="submit" value="Add Todo" class="btn_input"/>
+    </div>
+    <ul class="todo-list">
+        <li>
+            <span>Todo</span>
+            <div class="btn">
+                <button>Done</button>
+                <button>Remove</button>
+            </div>
+        </li>
+    </ul>
+    <script>
+
+        const todo = document.querySelector(".todo-input");
+        const todoInput = document.querySelector(".todo-input input[type='text']");
+        // console.log(todoInput);
+        const todoList = document.querySelector(".todo-list");
+
+
+        todo.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const newTodoText = todoInput.value;
+            const newLi = document.createElement("li");
+            const newLiInnerHtml = ` <span> ${newTodoText} </span>
+            <div class="btn">
+                <button>Done</button>
+                <button>Remove</button>
+            </div>`;
+            newLi.innerHTML = newLiInnerHtml;
+            todoList.append(newLi);
+            todoInput.value = "";
+            console.log("hello")
+        });
+    </script>
+</body>
+
+</html>
