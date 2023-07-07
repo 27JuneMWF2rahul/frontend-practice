@@ -13,21 +13,21 @@
     <input type="text" id="newEl" placeholder="Enter New position">
     <button onclick="InsertEl()">Insert</button>
     <script>
-        // let data = [60,30,10,40];
-        // let newEl = 70;
-        // let position=2;
+        let data = [60,30,10,40];
+        let newEl = 70;
+        let position=2;
 
-        // console.log(data);
-        // for(let i=data.length-1;i>=0;i--){
-        //     console.log(data[i]);
-        //     if(i>=position){
-        //         data[i+1]=data[i];
-        //         if(i===position){
-        //             data[i]=newEl;
-        //         }
-        //     }
-        // }
-        // console.log(data);
+        console.log(data);
+        for(let i=data.length-1;i>=0;i--){
+            console.log(data[i]);
+            if(i>=position){
+                data[i+1]=data[i];
+                if(i===position){
+                    data[i]=newEl;
+                }
+            }
+        }
+        console.log(data);
 
         function InsertEl() {
             let data = [60, 30, 10, 67, 40];
