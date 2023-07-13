@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/RPG.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Generater a <br><span>Random Password</span></h1>
+        <div class="display">
+            <input type="text" id="password" placeholder="Password">
+            <i class="fa-solid fa-copy" onclick="copyPassword()"></i>
+        </div>
+        <button onclick="creactePassword()">Generate Password</button>
+    </div>
+    <script>
+        const passwordBox = document.getElementById("password");
+        const length = 12;
+        
+        const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+        const numbar = "0123456789";
+        const symbols = "@#%^&*()_+~|}{[]<>/-=";
+
+        const allChars = upperCase + lowerCase + numbar + symbols;
+        function creactePassword(){
+            let password = "";
+            password += upperCase[Math.floor(Math.random() * upperCase.length)];
+            password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+            password += numbar[Math.floor(Math.random() * numbar.length)];
+            password += symbols[Math.floor(Math.random() * symbols.length)];
+            
+            while(length > password.length){
+                password += allChars[Math.floor(Math.random() * allChars.length)];
+        
+            }
+            passwordBox.value = password;
+        }
+
+        function copyPassword(){
+            passwordBox.select();
+            document.execCommand("copy")
+        }
+    </script>
+</body>
+</html>
