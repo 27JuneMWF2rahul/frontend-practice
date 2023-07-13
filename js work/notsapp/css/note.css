@@ -10,6 +10,7 @@
     color: #fff;
     padding-top: 4%;
     padding-left: 10%;
+    padding-bottom: 10px;
 }
 .container h1{
     display: flex;
@@ -49,6 +50,7 @@
     margin: 20px 0;
     outline: none;
     border-radius: 5px;
+
 }
 .input-box img{
     width: 25px;
