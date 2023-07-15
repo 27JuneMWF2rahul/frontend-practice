@@ -7,7 +7,7 @@ function showNotes(){
 }
 showNotes()
 function updateStorage(){
-    localStorage.setItem("notes" , notesContainer.innerHTML);
+    localStorage.setItem("notes" , notesContainer.innerText);
 }
 createBtn.addEventListener("click", ()=>{
     let inputBox = document.createElement("P");
@@ -30,5 +30,4 @@ notesContainer.addEventListener("click", function(e){
             }
         })
     }
-
 })
