@@ -12,9 +12,22 @@
 body {
   background-color: #000;
 }
+.col_50 {
+  width: 50%;
+}
+.col_45 {
+  width: 30%;
+}
+.col_70 {
+  width: 70%;
+}
+
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+.jsc {
+  justify-content: center;
 }
 .justify {
   justify-content: space-between;
@@ -29,7 +42,12 @@ body {
 .top i {
   padding: 10px;
 }
-
+.pos-rel {
+  position: relative;
+}
+.pos-ab {
+  position: absolute;
+}
 /* ---header-start-- */
 .header {
   background-image: linear-gradient(#00000058, #0000004d),
@@ -123,9 +141,9 @@ h1 {
 /* ---header-End-- */
 
 /* --sec1-start--- */
-.responsive{
-    position: relative;
-    bottom: -100px;
+.responsive {
+  position: relative;
+  bottom: -100px;
 }
 .sec1-text {
   background-color: rgba(255, 0, 0, 0.789);
@@ -149,3 +167,116 @@ h1 {
 /* --sec1-end--- */
 
 /* ---sec2-start--- */
+
+.sec-2 {
+  margin: 100px;
+}
+.sec-2 .UM {
+  text-align: center;
+  margin: 30px 0;
+  padding: 20px 0;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+}
+.box {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  /* height: 600px; */
+}
+.box1 {
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 30px;
+  overflow: hidden;
+}
+#item1 {
+  margin-right: 30px;
+
+  padding: 30px;
+  line-height: 30px;
+}
+.sec2img1 img {
+  width: 100%;
+  display: block;
+}
+#item1 h2 {
+  padding: 20px 0;
+}
+.sec-2 .btn button {
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin: 15px 0;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-weight: 300;
+  width: 100%;
+}
+.sec2text {
+  padding: 20px;
+}
+.time {
+  text-align: center;
+  padding: 10px;
+  margin-right: 10px;
+  background-color: aliceblue;
+  border-radius: 50%;
+}
+.sec2img1 > span {
+  top: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  left: 10px;
+  background-color: #fff;
+}
+
+/* ---sec-2-end--- */
+
+/* ---sec-3-start--- */
+
+.sec3 {
+  background-image: linear-gradient(#00000058, #0000004d),
+    url(../img/collge5.jpg);
+  background-size: cover;
+  background-position: center;
+  /* height: 100vh; */
+  padding: 50px 0;
+}
+.sec3text1{
+  background-color: #00000046;
+  padding: 30px;
+  color: #fff;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.sec3text1 .btn button{
+  background-color: red;
+  padding: 10px 30px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  
+  font-weight: 300;
+}
+.sec3text1 p{
+  margin: 10px 0;
+}
+.sec3text2{
+  background-color: #fff;
+  /* height: 100%;a */
+  width: 90%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 30px;
+}
+.submenu2,.submenu3,.submenu4,.submenu5{
+  display: none;
+}
+.active{
+  display: block;
+}
+/* ---sec-3-end--- */
