@@ -21,6 +21,10 @@ body {
 .col_70 {
   width: 70%;
 }
+.col_25{
+  width: 25%;
+}
+
 
 .row {
   display: flex;
@@ -231,7 +235,10 @@ h1 {
   padding: 10px 20px;
   border-radius: 10px;
   left: 10px;
-  background-color: #fff;
+  background-color: #ffffff7b;
+  backdrop-filter: blur(10px);
+  font-weight: 500;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* ---sec-2-end--- */
@@ -280,3 +287,33 @@ h1 {
   display: block;
 }
 /* ---sec-3-end--- */
+.sec-4{
+  padding: 50px 0 100px ;
+}
+.sec-4 img{
+  display: block;
+   width: 100%;
+}
+.sec4teaxt{
+  padding: 20px;
+  
+  background-color: #fff;
+}
+.sec4teaxt i:hover{
+  color:gold;
+}
+.my-2{
+  margin: 10px;
+}
+
+/* sec-4---end */
+
+/* sec-5--start */
+.sec-5{
+  background-image: linear-gradient(#00000058, #0000004d),
+  url(../img/collge5.jpg);
+  height: 100vh;
+  background-size: cover;
+  /* margin: 100px 0; */
+  
+}
