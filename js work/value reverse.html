@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <input type="text" id="input">
+        <p id="p"></p>
+        <button onclick="print()">
+            click
+        </button>
+
+    </div>
+
+    <script>
+        
+        function print(){
+            let input = document.getElementById("input").value
+            let split = input.split("");
+            let reverse = split.reverse("");
+            let join = reverse.join("");
+    
+            let p = document.getElementById("p")
+            p.innerText = join
+            console.log(join)
+        }
+        </script>
+</body>
+
+</html>
