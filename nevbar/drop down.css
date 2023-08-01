@@ -64,8 +64,15 @@ body{
 .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
     border-bottom: none;
 }
+
 .menu-bar ul li:hover .sub-menu-1 ul li a:hover{
     color: #4c6c03;
+}
+i{
+    transition: all .5s ease-in-out;
+}
+.sub-menu-1 li:hover i{
+    transform: rotate(90deg);
 }
 .fa-angle-right{
     float: right;
