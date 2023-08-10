@@ -27,9 +27,11 @@ async function searchImages(){
     imageLink.href = result.links.html;
     imageLink.target = "_blank";
 
-    imageLink.appendChild(image);
 
+    // console.log(imageLink)
+    imageLink.appendChild(image);
     searchResult.appendChild(imageLink)
+    // console.log(searchResult)
    })
    showMore.style.display = "block";
 }

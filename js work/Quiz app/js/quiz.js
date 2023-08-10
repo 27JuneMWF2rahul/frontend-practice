@@ -82,6 +82,7 @@ function resetState(){
     nextButton.style.display = "none";
     while(answerButtons.firstChild){
         answerButtons.removeChild(answerButtons.firstChild);
+        console.log(answerButtons.firstChild);
     }
 }
 
@@ -92,6 +93,7 @@ function selectAnswer(e){
     if(isCorrect){
         selectBtn.classList.add("correct");
         score++;
+        
     }
     else{
         selectBtn.classList.add("incorrect");

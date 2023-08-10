@@ -60,14 +60,32 @@ form button{
 }
 #search-result{
     width: 80%;
+    /* overflow: hidden; */
     margin: 100px auto;
     display: grid;
+    
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
 }
 #search-result img{
+  transition: all 1s;
     width: 100%;
     height: 230px;
     object-fit: cover;
     border-radius: 5px;
+}
+/* #search-result img:hover{
+    transform: scale(1.1);
+
+}
+#search-result img:not(:hover){
+    filter: blur(10px);
+} */
+#search-result:hover img {
+    opacity: 0.2s;
+    filter: blur(2px);
+}
+#search-result img:hover{
+    opacity: 1;
+    filter: blur(0px);
 }

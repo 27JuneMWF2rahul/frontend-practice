@@ -101,7 +101,7 @@ header i{
     /* animation-delay: -20px; */
 }
 .imgScroll div:nth-child(2){
-    animation: animate2 40s linear infinite;
+    animation: animate2 10s linear infinite;
     animation-delay: -20px;
 }
 .imgScroll:hover div,

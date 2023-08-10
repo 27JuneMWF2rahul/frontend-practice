@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Age Calculator</title>
-    <link rel="stylesheet" href="css/AGEC.css"> bbv
+    <link rel="stylesheet" href="css/AGEC.css"> 
 </head>
 
 <body>
@@ -56,17 +56,20 @@
             } else {
                 m3--;
                 d3 = getDaysInMoth(y1,m1) + d2 - d1;
+                // console.log(d3)
             }
             if(m3 < 0){
                 m3 = 11;
                 y3--;
             }
-            // console.log(y3,m3,d3);
+            console.log(y3,m3,d3);
             result.innerHTML = `you are <span>${y3}</span> years, <span>${m3}</span> month and <span>${d3}</span> days old`
+            console.log(d3)
         }
         function getDaysInMoth(year, month) {
             return new Date(year, month, 0).getDate();
         }
+        console.log(getDaysInMoth());
     </script>
 </body>
 
