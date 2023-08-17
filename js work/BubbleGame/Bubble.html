@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main">
+            <div id="panel">
+                <div id="ptop">
+                    <div class="elem">
+                        <h4>Hit</h4>
+                        <div id="hitval" class="box">5</div>
+                    </div>
+                    <div class="elem">
+                        <h4>Timer</h4>
+                        <div id="timerval" class="box">60</div>
+                    </div>
+                    <div class="elem">
+                        <h4>Score</h4>
+                        <div id="scoreval" class="box">0</div>
+                    </div>
+                </div>
+
+                <div id="pbtm">
+                    <div class="bubble">5</div>
+                </div>
+            </div>
+        </div>
+        <p id="wrong"></p>
+
+        <script>
+            var timer = 60;
+            var score = 0;
+            var hitrn = 0;
+
+            function increaseScore(){
+                score += 10;
+                document.querySelector("#scoreval").textContent = score
+
+            }
+
+            function getNewHit(){
+                hitrn = Math.floor(Math.random()*10); 
+                document.querySelector("#hitval").textContent = hitrn;
+            }
+
+            function makeBubble() {
+                var Clutter = "";
+
+                for (let i = 0; i <= 111; i++) {
+                    var rn = Math.floor(Math.random()*10)
+                    Clutter += `<div class="bubble">${rn}</div>`;
+                }
+
+                document.querySelector("#pbtm").innerHTML = Clutter;
+            }
+            
+            // var timer = 3;
+            function runTimer() {
+                var timerint = setInterval(function() {
+                    if (timer > 0) {
+                        timer--;
+                        document.querySelector("#timerval").textContent = timer;
+                    } else {
+                        clearInterval(timerint);
+                        document.querySelector("#pbtm").innerHTML = `<h1>Game Over</h1>`;
+                    }
+                }, 1000);
+            }
+
+            document.querySelector("#pbtm").addEventListener("click", function (dets) {
+                var clickednum = Number(dets.target.textContent);
+                // console.log(dets.target);
+                if(clickednum === hitrn){
+                    increaseScore();
+                    makeBubble();
+                    getNewHit();
+                   document.getElementById("wrong").innerHTML = "Good";
+                   document.getElementById("wrong").style.color="blue";
+                }
+                else{
+                    document.getElementById("wrong").innerHTML = "Try Again";   
+                    document.getElementById("wrong").style.color="red";
+                }
+                
+            })
+            runTimer();
+            makeBubble();
+            getNewHit();
+            // increaseScore();
+        </script>
+
+    </body>
+</html>
