@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>HELLO</h2>
+        <div id="print"></div>
+        <input type="text" id="root">
+        <button type="submit" onclick="UserAction()">Search</button>
+        <script>
+            "use strict"
+            function UserAction (){
+               var stor = parseInt( document.getElementById("root").value)
+              document.getElementById("print").innerHTML = stor
+            }
+            name = "rahul"
+           console.log(name)
+           let amit="amitkumar"
+
+           amit.split(0)
+           console.log(amit);
+           for ( let i = 0; i<amit.length; i++ ){
+              if(i% 2 === 0){
+               var odd =  amit[i]
+              }
+              else{
+                // console.log("even")
+
+              }
+              console.log(odd)
+           }
+           
+  </script>
+
+    </body>
+</html>
